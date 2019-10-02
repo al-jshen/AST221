@@ -1,0 +1,128 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage{fullpage}
+\usepackage[top=2cm, bottom=4.5cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd}
+\usepackage{lastpage}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{mathrsfs}
+\usepackage{siunitx}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{caption,cleveref,colortbl,csquotes,datatool,helvet,mathpazo,multirow,listings,pgfplots,xcolor}
+
+\DeclareSIUnit \erg{erg}
+\DeclareSIUnit \au{au}
+\DeclareSIUnit \pc{pc}
+\DeclareSIUnit \ly{ly}
+\DeclareSIUnit \years{years}
+
+\hypersetup{%
+	colorlinks=true,
+	linkcolor=blue,
+	linkbordercolor={0 0 1}
+}
+
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+
+% edit these
+\newcommand\course{AST221H}
+\newcommand\Title{Assignment 2}
+\newcommand\Name{Jeff Shen} 
+\newcommand\Id{1004911526} 
+\newcommand\Date{Sept. 20, 2019}
+
+\pagestyle{fancyplain}
+\headheight 35pt
+\lhead{\Name}
+\lhead{\Name\\\Id}
+\chead{\textbf{\Large \Title}}
+\rhead{\course \\ \Date}
+\lfoot{}
+\cfoot{}
+\rfoot{\small\thepage}
+\headsep 1.5em
+
+\begin{document}
+	
+	% problem 1
+	\section*{Problem 1: Magnitudes in the Solar System}
+	
+	Radius of the Moon: $1.7371 \times 10^8\;\si{\cm}$
+	
+	Average distance from Earth to Moon: $3.844 \times 10^{10} \;\si{\cm}$
+	
+	\begin{enumerate}[label=(\alph*)]
+		\item
+		We want to use the the radiant flux formula: $$F=\frac{L}{4\pi r^2}.$$ In this case, since we want the total solar power absorbed by the Moon, we want to multiply the solar constant ($1.360 \times 10^6 \;\si{\erg\per\second\per\square\cm}$) by the area of the Moon which is receiving the light, so we arrange the formula to isolate $L$: $$L=F4\pi r^2.$$ Half of the Moon receives light, and we make the simplification that all parts of this surface receive equal amounts of radiant flux regardless of the angle at which the light hits the surface. The surface area of the Moon is $$4\pi r^2 = 4\pi (1.7371 \times 10^8\;\si{\cm})^2 = 3.79\times 10^{17} \;\si{\square\cm},$$ and so the total power absorbed is $$L=1.360\times 10^6 \;\si{\erg\per\second\per\square\cm} \times \frac{3.79\times 10^{17} \;\si{\square\cm}}{2} = 2.58 \times 10^{23} \;\si{\erg\per\second}.$$
+		
+		
+		\item
+		The luminosity due to the reflected light is $12\%$ of the total power absorbed by the Moon: $$2.58 \times 10^{23} \;\si{\erg\per\second} \times 0.12 = 3.11 \times 10^{22} \;\si{\erg\per\second}.$$ Then, we use the radiant flux formula again: $$F = \frac{L_M}{4\pi r^2} = \frac{3.11 \times 10^{22} \;\si{\erg\per\second}}{4\pi (3.844 \times 10^{10}\;\si{\cm})^2} = 1.67\;\si{\erg\per\second\per\square\cm}$$ where $L_M$ is the luminosity of the Moon due to reflected sunlight, and $r$ is the average distance from the Earth to the Moon.
+		
+		\item
+		The solar constant is roughly $10^6$ times larger than the result from (b). If eyes were linear light detectors, then some objects would be extremely bright while others would be extremely dark. Being logarithmic allows for a large range of fluxes to be "compressed" down to a smaller range.
+		
+		\item
+		At the Kuiper Belt, the distance from the Earth to the Sun is approximately $1000$ times further than usual. Thus, the flux, which follows the inverse-square law, is $1000^2$ times smaller. At 1 au, we know that the flux of the Sun received by the Earth is $F=1.360\times 10^6\;\si{\erg\per\second\per\square\cm}.$ Then at 1000 au, the flux would be $$F=\frac{1.360\times 10^6\;\si{\erg\per\second\per\square\cm}}{1000^2} = 1.360\;\si{\erg\per\second\per\square\cm}.$$ To find the Sun's apparent magnitude at the Kuiper Belt, we use the flux ratio formula: $$m_2 = m_1 + 2.5\log(\frac{F_1}{F_2}) = -26.81 + 2.5\log(\frac{1.360\times 10^6}{1.360}) = -26.81+2.5(6) = -11.81$$ where $m_1, m_2$ are the apparent magnitudes of the Sun at its usual position and at the Kuiper Belt respectively, and $F_1, F_2$ are the radiant fluxes received by Earth from the Sun at its usual position at the Kuiper Belt respectively, as measured in $\si{\erg\per\second\per\square\cm}.$
+		
+		No, the Sun would not be the brightest object in the sky, since the flux received from the Moon would be larger. 
+		
+	\end{enumerate}
+	
+	% problem 2
+	\section*{Problem 2: The Alpha Centauri system}
+	\begin{enumerate}[label=(\alph*)]
+		\item 
+		We can calculate the distance from Earth to Proxima Centauri: $$d=\frac{1}{p''}\;\si{\pc} = \frac{1}{0.77''}\;\si{\pc} = 1.30\;\si{\pc}.$$ 
+		Then we can calculate the absolute magnitude of Proxima Centauri as follows: $$M = m - 5\log(d) + 5 = 11.05 - 5\log(1.3) + 5 = 15.48$$ where $M$ is the absolute magnitude, $m$ is the apparent magnitude, and $d$ is the distance as measured in parsecs. 
+		
+		To compare the luminosity of Proxima Centauri to the Sun, we the formula $$100^{\frac{M_1 - M_2}{5}} = \frac{L_2}{L_1}, $$ where $M$ is the absolute magnitude and $L$ is the luminosity. We can take one of the stars (star 1) to be the Sun. Then $$100^{\frac{4.83 - 15.48}{5}} = 5.5\times 10^{-5} =  \frac{L_2}{L_1}.$$ So Proxima Centauri is $5.5\times 10^{-5}$ times as luminous as the Sun.
+		
+		\item
+		We want a flux value of $1.360 \times 10^6\;\si{\erg\per\second\per\square\cm},$ which is the amount of flux that Earth receives from the Sun. We can calculate the luminosity of Proxima Centauri from the information from (a): $$L = (5.5\times 10^{-5}) \times L_\odot = (5.5\times 10^{-5}) \times (3.83 \times 10^{33}\;\si{\erg\per\second}) = 2.1\times 10^{29}\;\si{\erg\per\second}.$$ Then if we rearrange the radiant flux equation, we find that $$r=\sqrt{\frac{L}{4\pi F}} = \sqrt{\frac{2.1\times 10^{29}\;\si{\erg\per\second}}{4\pi \times 1.360 \times 10^6\;\si{\erg\per\second\per\square\cm}}} = 1.11 \times 10^{11}\;\si{\cm}.$$ We first convert our units to au: $a = r = 1.11 \times 10^{11}\;\si{\cm} = 0.0074\;\si{\au}$ and then use the simplified version of Kepler's Third Law to relate the period to the orbital radius: $$P = a^{\frac{3}{2}} = (0.0074\;\si{\au})^{\frac{3}{2}} = 0.000636\;\si{\years}$$
+		
+		\item
+		We can perform the same calculation as in (b): $$r=\sqrt{\frac{L}{4\pi F}} = \sqrt{\frac{0.0017 \times 3.83 \times 10^{33}\;\si{\erg\per\second}}{4\pi \times 1.360 \times 10^6\;\si{\erg\per\second\per\square\cm}}} = 6.17 \times 10^{11}\;\si{\cm}.$$ Again, we convert to au: $6.17 \times 10^{11}\;\si{\cm} = 0.041\;\si{\au}.$ It might be Earth-like since size of the planet is similar, but the amount of flux is receives from Proxima Centauri is slightly less than the amount that Earth receives from the Sun (because of the further distance), so it might be colder.
+		
+		\item
+		Distance to Alpha Centauri system: $4.367$ light years = $1.34$ parsecs
+		
+		Absolute magnitude of Alpha Centauri A: $M = 0.01 - 5\log(1.34) + 5 = 4.37$
+		
+		Absolute magnitude of Alpha Centauri B: $M = 1.33 - 5\log(1.34) + 5 = 5.69$
+		
+		\\
+		
+		We can determine luminosity ratios with the following formula: $$\frac{L_2}{L_1} = 100^{\frac{M_1 - M_2}{5}},$$ where $L_1, L_2$ are the luminosities of stars 1 and 2 respectively, and $M_1, M_2$ are the absolute magnitudes of stars 1 and 2, respectively. We let star 1 be Alpha Centauri A, and star 2 be Alpha Centauri B. Then we can rearrange the formula to find $L_2$ in terms of $L_1$: $$L_2 = 100^{\frac{M_1 - M_2}{5}} L_1 = 100^{\frac{4.37 - 5.69}{5}} L_1 = 0.30 L_1.$$ Then the total luminosity of the Alpha Centauri system is $$L_1 + L_2 = L_1 + 0.30 L_1 = 1.30 L_1.$$ We can find $L_1$ in terms of the luminosity of the Sun using the same method: $$L_1 = 100^{\frac{M_\odot - M_1}{5}} L_\odot = 100^{\frac{4.83 - 4.37}{5}} L_\odot = 1.53 L_\odot.$$ Then $1.30 L_1 = 1.30 (1.53 L_\odot) = 1.99 L_\odot.$ We then calculate the absolute magnitude of the unresolved binary star: $$M = M_\odot - 2.5\log(\frac{L}{L_\odot}) = 4.83 - 2.5\log(\frac{1.99L_\odot}{L_\odot}) = 4.83 - 0.74 = 4.09.$$ Finally, we can use this to find the apparent magnitude: $$m = M + 5\log(d) - 5 = 4.09 + 5\log(1.34) - 5 = 4.09 + 0.64 - 5 = -0.27,$$ where d is the distance from Earth to the Alpha Centauri system in parsecs. 
+		
+	\end{enumerate}
+	
+	\section*{Problem 3: The Pluto-Charon system}
+	\begin{enumerate}[label=(\alph*)]
+		\item 
+		Energy from one cycle of p-p chain: $26.2\times 10^{26} \;\si{MeV} = 4.20\times 10^{-12}\;\si{J/cycle}$
+		
+		Luminosity of the Sun: $3.828 \times 10^{26} \;\si{J/s}$
+		
+		Then divide to find cycles per second: $$\frac{3.828 \times 10^{26} \;\si{J/s}}{4.20\times 10^{-12}\;\si{J/cycle}} = 9.11\times 10^{37}\;\si{cycles/s}$$
+		
+		
+		\item
+		We make the assumption that the separation and orbital periods of Pluto and Charon are constant. Call $r_p$ the distance from Pluto to the center of mass of Pluto and Charon, and $r_c$ the distance from Charon to the center of mass. Then the distance from Pluto to Charon is $r = r_p + r_c = 1.957\times 10^7\;\si{\metre}.$ 
+		
+		Since the assumption is made that Pluto and Charon's orbits are circular, and  they have the same orbital period around their center of mass, we can rewrite the orbital period as follows: $$P = \frac{2\pi r_p}{v_p} = \frac{2\pi r_c}{v_c},$$ where $v_p, v_c$ are the velocities of Pluto and Charon respectively. This is true since the period (time) is just the circumference of a circle with some orbital radius (distance), divided by the velocity of the object (speed). Then we see the relation between the mass ratios and the orbital velocity ratios: $$\frac{r_p}{r_c} = \frac{v_p}{v_c}.$$
+		
+		We can take the above relation and solve for $r_c$: $$r_c = \frac{Pv_c}{2\pi} = \frac{(5.5184\times 10^5\;\si{\second}) \times (200\;\si{\meter\per\second})}{2\pi} = 1.76 \times 10^7 \;\si{\meter}.$$
+		
+		Then, since we know the separation between Pluto and Charon, we can find the distance from Pluto to the barycenter: $$r_p = r - r_c = (1.9570\times 10^7\;\si{\meter}) - (1.76 \times 10^7\;\si{\meter}) = 1.97\times 10^6 \;\si{\meter}.$$
+		
+		Comparing this to Pluto's radius of $1.1883\times 10^6\;\si{\meter}$, we see that the distance from Pluto to the barycenter is approximately double Pluto's radius. We conclude that the barycenter lies outside of Pluto. 
+		
+	\end{enumerate}
+	
+\end{document}
