@@ -105,13 +105,53 @@ we get
 
 In particular, when $p = 1''$, $d = 1\,{\rm pc}$.
 
-\textbf{Light year}: the distance travelled by light through a vacuum in a Julian year: $1\,{\rm ly} = 9.460735\times 10^{15}\,{\rm m} = \frac{1}{3.26}~{\rm pc}.
+\textbf{Light year}: the distance travelled by light through a vacuum in a Julian year: $1\,{\rm ly} = 9.460735\times 10^{15}\,{\rm m} = \frac{1}{3.26}~{\rm pc}$.
 
-\subsection{The Magnitude Scale}
+\subsection{The Magnitude Scale, Luminosity, and Flux}
+
+\textbf{Apparent magnitude ($m$)}: a logarithmic measure of relative brightness of objects. Brighter objects have a lower $m$ value. Ranges from $m=-26.83$ for the Sun to $m=30$ for the faintest objects in the sky. A 1 mag increase corresponds to a brightness increase of $100^{1/5} \simeq 2.512$. Dimensionless. 
+
+\textbf{Luminosity ($L$])}: total amount of energy radiated (across all wavelengths) per unit time. Is an intrinsic property which, for stars, depends on the rate of fusion. $\rm erg\,s^{-1}$. 
+
+\textbf{Radiant flux ($F$)}: luminosity incident on a unit area oriented perpendicular to the direction of the light. Determines how bright an object is perceived to be. Flux (and radiation in general) follows the \textbf{inverse-square law}, meaning that it is inversely proportional to the square of the distance. Given that stars radiate energy in spheres, and that the area of a sphere is $4\pi r^2$, the flux as measured at some distance $r$ away from a source is:
+
+\begin{align*}
+    F = \frac{L}{4\pi r^2}~[{\rm erg\,s^{-1}\,cm^{-2}}].
+\end{align*}
+
+\textbf{Absolute magnitude ($M$)}: apparent magnitude of an object, measured at a distance of $10\,{\rm pc}$.
+
+Define the \textbf{flux ratio} as 
+
+\begin{align*}
+    \frac{F_2}{F_1} = 100^{(m_1-m_2)/5}~[{\rm dimensionless}].
+\end{align*}
+
+Alternatively, taking the logarithm of both sides and rearranging, 
+
+\begin{align*}
+    m_1 - m_2 = -2.5\log\left(\frac{F_1}{F_2}\right)~[{\rm dimensionless}].
+\end{align*}
+
+Knowing both the apparent and the absolute magnitudes of a star gives us the distance (\textbf{distance modulus}):
+
+\begin{align*}
+    d = 10^{(m-M+5)/5}~[{\rm pc}].
+\end{align*}
+
+Alternatively, taking the logarithm of both sides and rearranging, 
+
+\begin{align*}
+    m-M = 5\log\left(d\right)-5 = 5\log\left({\frac{d}{10\,{\rm pc}}}\right)~[{\rm mag}].
+\end{align*}
+
+
+
+
 
 \subsection{The Copernican Revolution}
 
-\subsection{Equations}
+\subsection{Definitions and Equations}
 
 % --------------------------------------------- %
 % Week 2 %
@@ -140,7 +180,7 @@ derivations
 
 \subsection{Tides and Moons}
 
-\subsection{Equations}
+\subsection{Definitions and Equations}
 
 % --------------------------------------------- %
 % Week 4 %
@@ -153,7 +193,7 @@ derivations
 
 \subsection{The Virial Theorem}
 
-\subsection{Equations}
+\subsection{Definitions and Equations}
 
 
 % --------------------------------------------- %
@@ -176,7 +216,7 @@ doppler
 \subsection{Photon Diffusion}
 mfp
 
-\subsection{Equations}
+\subsection{Definitions and Equations}
 
 
 % --------------------------------------------- %
@@ -193,7 +233,7 @@ mass, size, brightness relations
 
 \subsection{Timescales}
 
-\subsection{Equations}
+\subsection{Definitions and Equations}
 
  
 % --------------------------------------------- %
@@ -207,7 +247,7 @@ mass, size, brightness relations
 
 \subsection{Electron Degeneracy}
 
-\subsection{Equations}
+\subsection{Definitions and Equations}
 
 % --------------------------------------------- %
 % Week 8 %
@@ -221,7 +261,7 @@ mass, size, brightness relations
 
 \subsection{Black Holes}
 
-\subsection{Equations}
+\subsection{Definitions and Equations}
 
 
 \end{document}
