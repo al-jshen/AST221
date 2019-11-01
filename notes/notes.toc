@@ -2,7 +2,7 @@
 \contentsline {subsection}{\numberline {1.1}Stellar Parallax}{2}{subsection.1.1}% 
 \contentsline {subsection}{\numberline {1.2}The Magnitude Scale, Luminosity, and Flux}{2}{subsection.1.2}% 
 \contentsline {subsection}{\numberline {1.3}The Copernican Revolution}{3}{subsection.1.3}% 
-\contentsline {subsection}{\numberline {1.4}Definitions and Equations}{3}{subsection.1.4}% 
+\contentsline {subsection}{\numberline {1.4}Equations}{3}{subsection.1.4}% 
 \contentsline {section}{\numberline {2}Week 2}{4}{section.2}% 
 \contentsline {subsection}{\numberline {2.1}Orbital Mechanics}{4}{subsection.2.1}% 
 \contentsline {subsection}{\numberline {2.2}Newtonian Mechanics}{4}{subsection.2.2}% 
