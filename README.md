@@ -1,2 +1,2 @@
-# AST221H
+# AST221
 Stars and Planets with Rachel Friesen
