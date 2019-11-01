@@ -1,6 +1,7 @@
 \documentclass[a4paper,10pt]{article}
 \usepackage{geometry}
 \usepackage{graphicx}
+\graphicspath{ {./figures/} }
 \usepackage{caption}
 \usepackage{enumitem}
 \usepackage{multicol}
@@ -13,7 +14,10 @@
 \geometry{total={210mm,297mm},
 left=25mm,right=25mm,%
 bindingoffset=0mm, top=20mm,bottom=20mm}
+\setlength{\parindent}{0pt}
+
 \newcommand{\linia}{\rule{\linewidth}{0.5pt}}
+\newcommand{\fig}[1]{\centerline{\includegraphics{#1}}}
 \AtBeginDocument{%
   \setlength\abovedisplayskip{-3pt}
   \setlength\belowdisplayskip{5pt}}
@@ -67,6 +71,41 @@ bindingoffset=0mm, top=20mm,bottom=20mm}
 \section{Week 1}
 
 \subsection{Stellar Parallax}
+
+Trigonometric parallax: using a known distance as a baseline, the distance to an object can be determined by observing it from different locations. Measurements of distances to a star can be made on Earth six months apart, when the Sun will have moved a distance of 2 AU (orbital diameter). 
+
+\begin{figure}[h]
+    \fig{parallax}
+\end{figure}
+
+The parallax angle $p$ is half of the maximum change in position. From this, we can calculate distance as follows:
+
+\begin{align*}
+    d = \frac{1 {\rm AU}}{\tan p\,[{\rm rad}]} \simeq \frac{1}{p\,[{\rm rad}]} ~ {\rm AU},
+\end{align*}
+
+where for small angles $\tan p \simeq p$ (small-angle approximation). 
+
+Convert this into arcseconds: 
+\begin{align*}
+    1\,{\rm rad} = 57.3^\circ = 206264.8''
+\end{align*}
+
+Defining a new unit called a \textbf{parsec} (parallax-second) as
+
+\begin{align*}
+    1\,{\rm pc} = 2.062648 \times 10^5\,{\rm AU} = 3.0856776 \times 10^{16}\,{\rm m},
+\end{align*}
+
+we get
+
+\begin{align*}
+    d \simeq \frac{1}{p['']} ~ {\rm pc}.
+\end{align*}
+
+In particular, when $p = 1''$, $d = 1\,{\rm pc}$.
+
+\textbf{Light year}: the distance travelled by light through a vacuum in a Julian year: $1\,{\rm ly} = 9.460735\times 10^{15}\,{\rm m} = \frac{1}{3.26}~{\rm pc}.
 
 \subsection{The Magnitude Scale}
 
