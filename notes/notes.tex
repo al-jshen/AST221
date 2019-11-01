@@ -6,6 +6,7 @@
 \usepackage{enumitem}
 \usepackage{multicol}
 \usepackage{multirow}
+\usepackage{tabularx}
 \usepackage{booktabs}
 \usepackage{mathtools}
 \usepackage{amsmath,amsthm,amssymb,cancel,bm,upgreek}
@@ -72,7 +73,7 @@ bindingoffset=0mm, top=20mm,bottom=20mm}
 
 \subsection{Stellar Parallax}
 
-Trigonometric parallax: using a known distance as a baseline, the distance to an object can be determined by observing it from different locations. Measurements of distances to a star can be made on Earth six months apart, when the Sun will have moved a distance of 2 AU (orbital diameter). 
+\textbf{Trigonometric parallax}: using a known distance as a baseline, the distance to an object can be determined by observing it from different locations. Measurements of distances to a star can be made on Earth six months apart, when the Sun will have moved a distance of 2 AU (orbital diameter). 
 
 \begin{figure}[h]
     \fig{parallax}
@@ -81,7 +82,7 @@ Trigonometric parallax: using a known distance as a baseline, the distance to an
 The parallax angle $p$ is half of the maximum change in position. From this, we can calculate distance as follows:
 
 \begin{align*}
-    d = \frac{1 {\rm AU}}{\tan p\,[{\rm rad}]} \simeq \frac{1}{p\,[{\rm rad}]} ~ {\rm AU},
+    d = \frac{1{\tan p\,[{\rm rad}]}~[{\rm AU}] \simeq \frac{1}{p\,[{\rm rad}]} ~ {\rm AU},
 \end{align*}
 
 where for small angles $\tan p \simeq p$ (small-angle approximation). 
@@ -133,13 +134,13 @@ Alternatively, taking the logarithm of both sides and rearranging,
     m_1 - m_2 = -2.5\log\left(\frac{F_1}{F_2}\right)~[{\rm dimensionless}].
 \end{align*}
 
-Knowing both the apparent and the absolute magnitudes of a star gives us the distance (\textbf{distance modulus}):
+Knowing both the apparent and the absolute magnitudes of a star gives us the distance:
 
 \begin{align*}
     d = 10^{(m-M+5)/5}~[{\rm pc}].
 \end{align*}
 
-Alternatively, taking the logarithm of both sides and rearranging, 
+Alternatively, taking the logarithm of both sides and rearranging, we get the \textbf{distance modulus}: 
 
 \begin{align*}
     m-M = 5\log\left(d\right)-5 = 5\log\left({\frac{d}{10\,{\rm pc}}}\right)~[{\rm mag}].
@@ -162,7 +163,7 @@ where $F_{10, \odot}$ is the flux received from the Sun at a distance of $10\,{\
 
 \subsection{The Copernican Revolution}
 
-\textbf{Heliocentric model}: model of the Solar System proposed by Copernicus. The Sun, rather than the Earth, is placed at the center of the universe, and all other bodies orbit it.
+\textbf{Heliocentric model}: model of the Solar System proposed by Copernicus. The Sun, rather than the Earth, is placed at the center of the universe, and all other bodies orbit it. Allowed retrograde motion to be better explained. 
 
 \textbf{Inferior planets}: planets orbiting between the Sun and Earth. Mecury, Venus.  
 
@@ -172,11 +173,35 @@ where $F_{10, \odot}$ is the flux received from the Sun at a distance of $10\,{\
     \fig{orbital_configs}
 \end{figure}
 
+
 \textbf{Synodic period ($S$)}: time between successive oppositions or conjunctions 
 
 \textbf{Sidereal period ($P$)}: time to complete one complete orbit as measured relative to background stars
 
 \subsection{Equations}
+\vspace{0.5cm}
+
+\begin{tabularx}{\textwidth}{ l X r }
+    Parallax && $d = \frac{1}{\tan p\,[{\rm rad}]}~[{\rm AU}] \simeq \frac{1}{p\,[{\rm rad}]} ~ {\rm AU} \simeq \frac{206264}{p['']}~[{\rm AU}] = \frac{1}{p['']}~[{\rm pc}]$ \\ 
+    \addlinespace[0.5cm]
+    Flux and luminosity && $F = \frac{L}{4\pi r^2}~[{\rm erg\,s^{-1}\,cm^{-2}}]$ \\
+    \addlinespace[0.5cm]
+    Flux ratio && $\frac{F_2}{F_1} = 100^{(m_1-m_2)/5}~[{\rm dimensionless}]$ \\
+    \addlinespace[0.5cm]
+               && $m_1 - m_2 = -2.5\log\left(\frac{F_1}{F_2}\right)~[{\rm dimensionless}]$ \\
+    \addlinespace[0.5cm]
+               && $M = M_\odot - 2.5\log\left(\frac{L}{L_\odot}\right)~[{\rm mag}]$ \\
+    \addlinespace[0.5cm]
+               && $m = M_\odot - 2.5\log\left(\frac{F}{F_{10, \odot}}\right)~[{\rm mag}]$ \\
+    \addlinespace[0.5cm]
+    Distance && $d = 10^{(m-M+5)/5}~[{\rm pc}]$ \\
+    \addlinespace[0.5cm]
+    Distance modulus && $m-M = 5\log\left(d\right)-5 = 5\log\left({\frac{d}{10\,{\rm pc}}}\right)~[{\rm mag}]$ \\ 
+    \addlinespace[0.5cm]
+                     && $m-M = 5\log\left(d\right)-5 = 5\log\left({\frac{d}{10\,{\rm pc}}}\right)~[{\rm mag}]$
+
+\end{tabularx}
+
 
 
 % --------------------------------------------- %
@@ -206,7 +231,7 @@ derivations
 
 \subsection{Tides and Moons}
 
-\subsection{Definitions and Equations}
+\subsection{Equations}
 
 % --------------------------------------------- %
 % Week 4 %
@@ -219,7 +244,7 @@ derivations
 
 \subsection{The Virial Theorem}
 
-\subsection{Definitions and Equations}
+\subsection{Equations}
 
 
 % --------------------------------------------- %
@@ -242,7 +267,7 @@ doppler
 \subsection{Photon Diffusion}
 mfp
 
-\subsection{Definitions and Equations}
+\subsection{Equations}
 
 
 % --------------------------------------------- %
@@ -259,7 +284,7 @@ mass, size, brightness relations
 
 \subsection{Timescales}
 
-\subsection{Definitions and Equations}
+\subsection{Equations}
 
  
 % --------------------------------------------- %
@@ -273,7 +298,7 @@ mass, size, brightness relations
 
 \subsection{Electron Degeneracy}
 
-\subsection{Definitions and Equations}
+\subsection{Equations}
 
 % --------------------------------------------- %
 % Week 8 %
@@ -287,7 +312,7 @@ mass, size, brightness relations
 
 \subsection{Black Holes}
 
-\subsection{Definitions and Equations}
+\subsection{Equations}
 
 
 \end{document}
