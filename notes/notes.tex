@@ -14,7 +14,7 @@
 \usepackage{lastpage}
 \geometry{total={210mm,297mm},
 left=25mm,right=25mm,%
-bindingoffset=0mm, top=20mm,bottom=20mm}
+bindingoffset=0mm, top=20mm,bottom=25mm}
 \setlength{\parindent}{0pt}
 
 \newcommand{\linia}{\rule{\linewidth}{0.5pt}}
@@ -48,7 +48,7 @@ bindingoffset=0mm, top=20mm,bottom=20mm}
 \chead{}
 \rhead{}
 \renewcommand{\headrulewidth}{0pt}
-\lfoot{AST221: Stars and Planets}
+\lfoot{}
 \cfoot{}
 \rfoot{Page \thepage\ /\ \pageref{LastPage}}
 
@@ -82,12 +82,13 @@ bindingoffset=0mm, top=20mm,bottom=20mm}
 The parallax angle $p$ is half of the maximum change in position. From this, we can calculate distance as follows:
 
 \begin{align*}
-    d = \frac{1{\tan p\,[{\rm rad}]}~[{\rm AU}] \simeq \frac{1}{p\,[{\rm rad}]} ~ {\rm AU},
+    d = \frac{1}{\tan p\,[{\rm rad}]}~[{\rm AU}] \simeq \frac{1}{p\,[{\rm rad}]}~{\rm AU},
 \end{align*}
 
 where for small angles $\tan p \simeq p$ (small-angle approximation). 
 
 Convert this into arcseconds: 
+
 \begin{align*}
     1\,{\rm rad} = 57.3^\circ = 206264.8''
 \end{align*}
@@ -101,7 +102,7 @@ Defining a new unit called a \textbf{parsec} (parallax-second) as
 we get
 
 \begin{align*}
-    d \simeq \frac{1}{p['']} ~ {\rm pc}.
+    d \simeq \frac{1}{p['']}~{\rm pc}.
 \end{align*}
 
 In particular, when $p = 1''$, $d = 1\,{\rm pc}$.
@@ -110,9 +111,9 @@ In particular, when $p = 1''$, $d = 1\,{\rm pc}$.
 
 \subsection{The Magnitude Scale, Luminosity, and Flux}
 
-\textbf{Apparent magnitude ($m$)}: a logarithmic measure of relative brightness of objects. Brighter objects have a lower $m$ value. Ranges from $m=-26.83$ for the Sun to $m=30$ for the faintest objects in the sky. A 1 mag increase corresponds to a brightness increase of $100^{1/5} \simeq 2.512$. Dimensionless. 
+\textbf{Apparent magnitude ($m$)}: a logarithmic measure of relative brightness of objects. Brighter objects have a lower $m$ value. Ranges from $m=-26.83$ for the Sun to $m=30$ for the faintest objects in the sky. A 1 mag increase corresponds to a brightness increase of $100^{1/5} \simeq 2.512$, so two stars with a difference of 5 mag differ in brightness by a factor of $100$. 
 
-\textbf{Luminosity ($L$])}: total amount of energy radiated (across all wavelengths) per unit time. Is an intrinsic property which, for stars, depends on the rate of fusion. $\rm erg\,s^{-1}$. 
+\textbf{Luminosity ($L$])}: total amount of energy radiated (across all wavelengths) per unit time. Is an intrinsic property, meaning that all observers, regardless of distance from the source, should measure the same luminosity.
 
 \textbf{Radiant flux ($F$)}: luminosity incident on a unit area oriented perpendicular to the direction of the light. Determines how bright an object is perceived to be. Flux (and radiation in general) follows the \textbf{inverse-square law}, meaning that it is inversely proportional to the square of the distance. Given that stars radiate energy in spheres, and that the area of a sphere is $4\pi r^2$, the flux as measured at some distance $r$ away from a source is:
 
@@ -147,7 +148,6 @@ Alternatively, taking the logarithm of both sides and rearranging, we get the \t
 \end{align*}
 
 Constants for the Sun are well known:
-
 \begin{itemize}
     \item $M_\odot = +4.74$
     \item $L_\odot= 3.839\times 10^{33}\,{\rm erg\,s^{-1}}$
@@ -159,6 +159,7 @@ Thus, the Sun can be used as a reference star in the ratio formulae:
     M &= M_\odot - 2.5\log\left(\frac{L}{L_\odot}\right)~[{\rm mag}],~{\rm and }\\
     m &= M_\odot - 2.5\log\left(\frac{F}{F_{10, \odot}}\right)~[{\rm mag}],
 \end{align*}
+
 where $F_{10, \odot}$ is the flux received from the Sun at a distance of $10\,{\rm pc}$.
 
 \subsection{The Copernican Revolution}
@@ -182,7 +183,7 @@ where $F_{10, \odot}$ is the flux received from the Sun at a distance of $10\,{\
 \vspace{0.5cm}
 
 \begin{tabularx}{\textwidth}{ l X r }
-    Parallax && $d = \frac{1}{\tan p\,[{\rm rad}]}~[{\rm AU}] \simeq \frac{1}{p\,[{\rm rad}]} ~ {\rm AU} \simeq \frac{206264}{p['']}~[{\rm AU}] = \frac{1}{p['']}~[{\rm pc}]$ \\ 
+    Parallax && $d = \frac{1}{\tan p\,[{\rm rad}]}~[{\rm AU}] \simeq \frac{1}{p\,[{\rm rad}]}~{\rm AU} \simeq \frac{206264}{p['']}~[{\rm AU}] = \frac{1}{p['']}~[{\rm pc}]$ \\ 
     \addlinespace[0.5cm]
     Flux and luminosity && $F = \frac{L}{4\pi r^2}~[{\rm erg\,s^{-1}\,cm^{-2}}]$ \\
     \addlinespace[0.5cm]
@@ -199,7 +200,6 @@ where $F_{10, \odot}$ is the flux received from the Sun at a distance of $10\,{\
     Distance modulus && $m-M = 5\log\left(d\right)-5 = 5\log\left({\frac{d}{10\,{\rm pc}}}\right)~[{\rm mag}]$ \\ 
     \addlinespace[0.5cm]
                      && $m-M = 5\log\left(d\right)-5 = 5\log\left({\frac{d}{10\,{\rm pc}}}\right)~[{\rm mag}]$
-
 \end{tabularx}
 
 
@@ -211,7 +211,79 @@ where $F_{10, \odot}$ is the flux received from the Sun at a distance of $10\,{\
 \newpage
 \section{Week 2}
 
-\subsection{Orbital Mechanics}
+\subsection{Orbits}
+
+Orbital shapes are always \textbf{conic sections}. The shape determines the type of orbit, and the shape in turn is determined by the \textbf{eccentricity $e$}—which is defined as the distance between the foci divided by the major axis—of the orbit. 
+
+For $e<1$, we have \textbf{elliptical orbits}:
+
+\fig{ellipse}
+
+An ellipse is defined by the set of points satisfying the equation
+
+\begin{align*}
+    r + r' = 2a
+\end{align*}
+
+where $r, r'$ are the distances from the ellipse to the focal points $F$ (the \textbf{principal focus}) and $F'$ respectively, and $a$ is the \textbf{semi-major axis}. The distance between each focus and the center of the ellipse is given by $ae$. The \textbf{semi-minor axis} is given by the distance $b$. 
+
+Consider a point at the end of a semi-minor axis, where $r=r'$. By definition of an ellipse, we then know that 
+
+\begin{align*}
+    r+r'=r+r=2r=2a
+    \implies r=a.
+\end{align*}
+
+By the Pythagorean Theorem, we know that 
+
+\begin{align*}
+    (ae)^2 + b^2 = r^2.
+\end{align*}
+
+Putting these two equations together, we find that 
+
+\begin{align*}
+    b^2 = a^2(1-e^2).
+\end{align*}
+
+If we consider the triangle in the above diagram, we can derive an expression for $r'$ in terms of $a, e, r$, and $\theta$:
+
+\begin{align*}
+    (r')^2 &= x^2 + y^2 \\
+           &= (2ae + r\cos\theta)^2 + (r\sin\theta)^2 \\
+           &= 4a^2e^2 + 4aer\cos\theta + r^2\cos^2\theta + r^2\sin^2\theta \\
+           &= 4a^2e^2 + 4aer\cos\theta + r^2 \\
+           &= 4ae(ae + r\cos\theta) + r^2.
+\end{align*}
+
+Using the definition of an ellipse, $r+r'=2a$, we have 
+
+\begin{align*}
+    r = \frac{a(1-e^2)}{1+e\cos\theta}
+\end{align*}
+
+\textbf{Perihelion} is the point on the ellipse which is closest to the principal focus, and is located at $\theta=0$. \textbf{Aphelion} is the point on the opposite end of the ellipse (furthest point from the principal focus), and is located at $\theta=180^\circ$. Thus, distances for perihelion and aphelion are given by 
+
+\begin{alignat*}{2}
+    &\text{Perihelion} &&\text{Aphelion} \\[0.2cm]
+    r_p &= \frac{a(1-e^2)}{1+e\cos 0} &\qquad\qquad\qquad r_a &= \frac{a(1-e^2)}{1+e\cos 180^\circ} \\
+        &= \frac{a(1-e^2)}{1+e} &&= \frac{a(1-e^2)}{1-e} \\
+        &= a(1-e). &&= a(1+e).
+\end{alignat*}
+
+A curve with eccentricity $e=1$ is called a \textbf{parabola}, and is described by the equation 
+
+\begin{align*}
+    r = \frac{2p}{1+\cos\theta}.
+\end{align*}
+
+where $p$ is the distance of closest appoach to the parabola's single focus at $\theta=0$. Parabolic trajectories are minimum-energy escape trajectories. 
+
+A curve with eccentricity $e>1$ is called a \textbf{hyperbola}, and is described by the equation
+
+\begin{align*}
+    r = \frac{a(e^2-1)}{1+e\cos\theta}.
+\end{align*}
 
 \subsection{Newtonian Mechanics}
 
