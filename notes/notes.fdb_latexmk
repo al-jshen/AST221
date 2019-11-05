@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1572923191 "notes.tex" "notes.pdf" "notes" 1572923191
+["pdflatex"] 1572925814 "notes.tex" "notes.pdf" "notes" 1572925814
   "/usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm" 1246382020 1120 7f9f170e8aa57527ad6c49feafd45d54 ""
@@ -33,6 +33,7 @@
   "/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb" 1248133631 37912 77d683123f92148345f3fc36a38d9ab1 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1248133631 36281 c355509802a035cadc5f15869451dcee ""
   "/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
+  "/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1248133631 32362 179c33bbf43f19adbb3825bb4e36e57a ""
   "/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb" 1248133631 31809 8670ca339bf94e56da1fc21c80635e2a ""
   "/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
@@ -105,13 +106,13 @@
   "figures/ellipse.png" 1572918875 48524 15205c769f88653c98d6ec9e921d7b56 ""
   "figures/orbital_configs.png" 1572579152 147292 0c6027a7ee8d501e9ba80d14d21ece1b ""
   "figures/parallax.png" 1572572618 27406 2eb4e31eafbfe62dff794e0c5047994e ""
-  "notes.aux" 1572923132 5693 e1868f1fabc18080ef2d714fe2863089 "pdflatex"
-  "notes.out" 1572923132 2533 63834d927c3b468afa296c58ee77757a "pdflatex"
-  "notes.tex" 1572923191 11925 3efed0d9f045266844cb577038d0d9f5 ""
-  "notes.toc" 1572923132 3292 b9f407a533eee522eac35f1b49e8b3a9 "pdflatex"
+  "notes.aux" 1572925763 5802 6f8206ead4a263cd8845e678467af3fd "pdflatex"
+  "notes.out" 1572925763 2581 7fd69029741bb5c322e6ffc0d362ed0f "pdflatex"
+  "notes.tex" 1572925813 14702 05a33e5b1d16e54ce6bca430d62c4788 ""
+  "notes.toc" 1572925763 3361 95eed6ea02c2bc66ec2490589df3c187 "pdflatex"
   (generated)
-  "notes.aux"
+  "notes.log"
   "notes.out"
+  "notes.aux"
   "notes.pdf"
   "notes.toc"
-  "notes.log"

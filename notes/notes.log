@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  4 NOV 2019 22:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  4 NOV 2019 23:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -636,14 +636,14 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 2.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
+) [1
+
+{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
 \tf@toc=\write4
 \openout4 = `notes.toc'.
 
- [1
-
-{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
-<./figures/parallax.png, id=227, 254.9525pt x 129.48375pt>
+ [2]
+<./figures/parallax.png, id=232, 254.9525pt x 129.48375pt>
 File: ./figures/parallax.png Graphic file (type png)
 <use ./figures/parallax.png>
 Package pdftex.def Info: ./figures/parallax.png  used on input line 79.
@@ -656,7 +656,7 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 152.
-<./figures/orbital_configs.png, id=241, 530.98375pt x 450.68375pt>
+<./figures/orbital_configs.png, id=246, 530.98375pt x 450.68375pt>
 File: ./figures/orbital_configs.png Graphic file (type png)
 <use ./figures/orbital_configs.png>
 Package pdftex.def Info: ./figures/orbital_configs.png  used on input line 174.
@@ -664,39 +664,32 @@ Package pdftex.def Info: ./figures/orbital_configs.png  used on input line 174.
 (pdftex.def)             Requested size: 273.14923pt x 231.84683pt.
 
 [4 <./figures/orbital_configs.png>] [5]
-<./figures/ellipse.png, id=258, 387.4475pt x 253.94875pt>
+<./figures/ellipse.png, id=263, 387.4475pt x 253.94875pt>
 File: ./figures/ellipse.png Graphic file (type png)
 <use ./figures/ellipse.png>
 Package pdftex.def Info: ./figures/ellipse.png  used on input line 220.
 (pdftex.def)             Requested size: 273.14923pt x 179.03387pt.
  [6 <./figures/ellipse.png>] [7]
-[8] [9] [10] [11] [12] 
+[8] [9] [10] [11] [12] [13] 
 AED: lastpage setting LastPage
-[13]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 390.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 390.
+[14]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 459.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 459.
  (./notes.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 390.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 390.
-
-
-Package rerunfilecheck Warning: File `notes.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `notes.out':
-(rerunfilecheck)             Before: 63834D927C3B468AFA296C58EE77757A;2533
-(rerunfilecheck)             After:  DC2AA376AF39761AB160FCCACFFDD469;2522.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 390.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 459.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 459.
+Package rerunfilecheck Info: File `notes.out' has not changed.
+(rerunfilecheck)             Checksum: 7FD69029741BB5C322E6FFC0D362ED0F;2581.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 459.
  ) 
 Here is how much of TeX's memory you used:
- 9632 strings out of 492616
- 144949 string characters out of 6129482
+ 9641 strings out of 492616
+ 145067 string characters out of 6129482
  266735 words of memory out of 5000000
- 13354 multiletter control sequences out of 15000+600000
- 11402 words of font info for 42 fonts, out of 8000000 for 9000
+ 13358 multiletter control sequences out of 15000+600000
+ 11701 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,12n,43p,497b,337s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,12n,43p,497b,362s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
@@ -705,16 +698,17 @@ Here is how much of TeX's memory you used:
 usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></us
 r/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
 local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
-cal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local
-/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/te
-xlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
-live/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texli
-ve/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive
-/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on notes.pdf (13 pages, 331054 bytes).
+cal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/loca
+l/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/t
+exlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texl
+ive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
+ve/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive
+/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2
+019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on notes.pdf (14 pages, 353698 bytes).
 PDF statistics:
- 362 PDF objects out of 1000 (max. 8388607)
- 324 compressed objects within 4 object streams
- 58 named destinations out of 1000 (max. 500000)
- 344 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 380 PDF objects out of 1000 (max. 8388607)
+ 340 compressed objects within 4 object streams
+ 63 named destinations out of 1000 (max. 500000)
+ 352 words of extra memory for PDF output out of 10000 (max. 10000000)
 

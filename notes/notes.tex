@@ -113,7 +113,7 @@ In particular, when $p = 1''$, $d = 1\,{\rm pc}$.
 
 \textbf{Apparent magnitude ($m$)}: a logarithmic measure of relative brightness of objects. Brighter objects have a lower $m$ value. Ranges from $m=-26.83$ for the Sun to $m=30$ for the faintest objects in the sky. A 1 mag increase corresponds to a brightness increase of $100^{1/5} \simeq 2.512$, so two stars with a difference of 5 mag differ in brightness by a factor of $100$. 
 
-\textbf{Luminosity ($L$])}: total amount of energy radiated (across all wavelengths) per unit time. Is an intrinsic property, meaning that all observers, regardless of distance from the source, should measure the same luminosity.
+\textbf{Luminosity ($L$)}: total amount of energy radiated (across all wavelengths) per unit time. Is an intrinsic property, meaning that all observers, regardless of distance from the source, should measure the same luminosity.
 
 \textbf{Radiant flux ($F$)}: luminosity incident on a unit area oriented perpendicular to the direction of the light. Determines how bright an object is perceived to be. Flux (and radiation in general) follows the \textbf{inverse-square law}, meaning that it is inversely proportional to the square of the distance. Given that stars radiate energy in spheres, and that the area of a sphere is $4\pi r^2$, the flux as measured at some distance $r$ away from a source is:
 
@@ -287,12 +287,81 @@ A curve with eccentricity $e>1$ is called a \textbf{hyperbola}, and is described
 
 \subsection{Newtonian Mechanics}
 
+\textbf{Newton's Laws of Motion}
+\begin{enumerate}
+    \item An object at rest will remain at rest and an object in motion will remain in motion in a straight line at a constant speed unless acted upon by an external force.
+    \item The net force (the sum of all forces) acting on an object is proportional to the object’s mass and its resultant acceleration. If an object is experiencing $n$ forces, then the net force is given by
+
+        \begin{align*}
+            \vec{F}_{\rm net} = \sum_{i=1}^n \vec{F}_i = m\vec{a}~[{\rm N}].
+        \end{align*}
+
+    \item For every action there is an equal and opposite reaction. If object 1 exerts a force $\vec{F}_{12}$ on some other object, then object 2 must exert a force $\vec{F}_{21}$ on object 1 of equal magnitude and opposite direction. Mathematically, 
+
+        \begin{align*}
+            \vec{F}_{12} = -\vec{F}_{21}~[{\rm N}].
+        \end{align*}
+\end{enumerate}
+
+\textbf{Law of Universal Gravitation}: this is the force responsible for holding planets in orbit. More generally, it applies to any two objects with mass: 
+
+\begin{align*}
+    F = G\frac{Mm}{r^2}~[{\rm N}]
+\end{align*}
+
+where $G=6.67\times 10^{-11}\,{\rm N\,m^2\,kg^{-2}}$ is the \textbf{universal gravitational constant}.
+
+{\Huge derivations of gravitational potential energy, work=change in kinetic energy, escape velocity IF HAVE TIME}
+
 \subsection{Kepler's Laws of Planetary Motion}
-derivations
+
+{\Huge do derivations!}
+
 \subsubsection{N-Body Orbits}
 \subsubsection{First Law}
+
+\begin{align*}
+    |r| = \frac{|L|^2/\mu^2}{GM(1+e\cos\theta)}~[{\rm m}]
+\end{align*}
+
+\begin{align*}
+    |L| = \mu\sqrt{GMa(1-e^2)}~[{\rm kg\,m^2\,s^{-1}}]
+\end{align*}
+
 \subsubsection{Second Law}
+
+\begin{align*}
+    \frac{{\rm d}A}{{\rm d}t} = \frac{1}{2}\frac{L}{\mu}~[\rm m^2\,s^{-1}]
+\end{align*}
+
 \subsubsection{Third Law}
+
+\begin{align*}
+    P^2 = \frac{4\pi^2a^3}{G(m_1+m_2)}
+\end{align*}
+
+\subsection{Equations}
+
+\begin{tabularx}{\textwidth}{ l X r }
+
+    Orbital equations && $r + r' = 2a$, for $0\leq e<1$ \\[0.3cm]
+                      && $r = \frac{2p}{1+\cos\theta}$, for $e=1$ \\[0.3cm]
+                      && $r = \frac{a(e^2-1)}{1+e\cos\theta}$, for $e>1$ \\[0.3cm]
+
+    Orbital position && $r = \frac{a(1-e^2)}{1+e\cos\theta}$, for $0\leq e<1$ \\[0.3cm]
+
+    Newton's Laws of Motion && Inertia \\[0.3cm]
+                            &&$\vec{F}_{\rm net} = \sum_{i=1}^n \vec{F}_i = m\vec{a}~[{\rm N}]$ \\[0.3cm]
+                            && $\vec{F}_{12} = -\vec{F}_{21}~[{\rm N}]$ \\[0.3cm]
+    
+    Law of Universal Gravitation && $F = G\frac{Mm}{r^2}~[\rm N]$ \\[0.3cm]
+
+    Kepler's Laws of Planetary Motion && $|r| = \frac{|L|^2/\mu^2}{GM(1+e\cos\theta)}~[{\rm m}]$ \\[0.3cm]
+                                      && $\frac{{\rm d}A}{{\rm d}t} = \frac{1}{2}\frac{L}{\mu}~[\rm m^2\,s^{-1}]$ \\[0.3cm]
+                                      && $P[\rm years]^2 = \frac{4\pi^2}{G(m_1+m_2)}a[\rm AU]^3$ \\[0.3cm]
+\end{tabularx}
+
+
 
 
 % --------------------------------------------- %
