@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1572925814 "notes.tex" "notes.pdf" "notes" 1572925814
+["pdflatex"] 1572928462 "notes.tex" "notes.pdf" "notes" 1572928462
   "/usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm" 1246382020 1120 7f9f170e8aa57527ad6c49feafd45d54 ""
@@ -106,13 +106,13 @@
   "figures/ellipse.png" 1572918875 48524 15205c769f88653c98d6ec9e921d7b56 ""
   "figures/orbital_configs.png" 1572579152 147292 0c6027a7ee8d501e9ba80d14d21ece1b ""
   "figures/parallax.png" 1572572618 27406 2eb4e31eafbfe62dff794e0c5047994e ""
-  "notes.aux" 1572925763 5802 6f8206ead4a263cd8845e678467af3fd "pdflatex"
-  "notes.out" 1572925763 2581 7fd69029741bb5c322e6ffc0d362ed0f "pdflatex"
-  "notes.tex" 1572925813 14702 05a33e5b1d16e54ce6bca430d62c4788 ""
-  "notes.toc" 1572925763 3361 95eed6ea02c2bc66ec2490589df3c187 "pdflatex"
+  "notes.aux" 1572928427 5802 6f8206ead4a263cd8845e678467af3fd "pdflatex"
+  "notes.out" 1572928427 2581 7fd69029741bb5c322e6ffc0d362ed0f "pdflatex"
+  "notes.tex" 1572928460 14964 3ed4653fab8340e8293170378885397f ""
+  "notes.toc" 1572928427 3361 95eed6ea02c2bc66ec2490589df3c187 "pdflatex"
   (generated)
-  "notes.log"
   "notes.out"
   "notes.aux"
-  "notes.pdf"
   "notes.toc"
+  "notes.pdf"
+  "notes.log"
