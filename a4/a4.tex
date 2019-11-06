@@ -1,0 +1,234 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage{fullpage}
+\usepackage[top=2cm, bottom=4.5cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd}
+\usepackage{lastpage}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{caption,cleveref,colortbl,csquotes,datatool,helvet,mathpazo,multirow,listings,pgfplots,xcolor}
+
+\hypersetup{%
+  colorlinks=true,
+  linkcolor=blue,
+  linkbordercolor={0 0 1}
+}
+
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+
+% edit these
+\newcommand\course{AST221H}
+\newcommand\Title{Assignment 4}
+\newcommand\Name{Jeff Shen} 
+\newcommand\Id{1004911526} 
+\newcommand\Date{Nov. 15, 2019}
+
+\pagestyle{fancyplain}
+\headheight 35pt
+\lhead{\Name}
+\lhead{\Name\\\Id}
+\chead{\LARGE \Title}
+\rhead{\course \\ \Date}
+\lfoot{}
+\cfoot{}
+\rfoot{\small\thepage}
+\pgfplotsset{compat=1.16}
+\headsep 1.5em
+
+\begin{document}
+
+% problem 1
+\section*{Problem 1: Electron degeneracy pressure}
+
+{\Huge not sure if im calculating z/a correctly for part (a).}
+
+\begin{itemize}
+    \item Equation 16.12: $P = \frac{(3\pi^2)^{2/3}}{5}\frac{\hbar^2}{m_e}\left[\left(\frac{Z}{A}\right)\frac{\rho}{m_H}\right]^{5/3}$
+    \item $\hbar = 1.055\times 10^{-34}~{\rm kg\,m^2\,s^{-1}}$
+    \item $m_e = 9.11\times 10^{-31}~{\rm kg}$
+    \item $m_H = 1.674\times 10^{-27}~{\rm kg}$
+    \item $M_\odot = 1.99\times 10^{30}~{\rm kg}$
+    \item $R_\odot = 6.96\times 10^{8}~{\rm m}$
+\end{itemize}
+
+\begin{enumerate}[label=(\alph*)]
+
+    \item We can calculate the core density using the given equation:
+        \begin{equation*}
+            \rho_c = \frac{3M_c}{4\pi R_c^3} = \frac{3\times (0.1 \times 1.99\times 10^{30}~{\rm kg})}{4\pi \times (0.1\times 6.96\times 10^{8}~{\rm m})^3} = 1.41\times 10^{5}~{\rm kg\,m^{-3}}
+        \end{equation*}
+
+        For hydrogen, $Z=1$, $A=1$, and for helium, $Z=2$, $A=4$, so $\frac{Z}{A}= 0.5\left(\frac{1}{1}\right) + 0.5\left(\frac{2}{4}\right) = 0.5 + 0.25 = 0.75$. Using this and the other information we have, we can calculate the electron degeneracy pressure using equation 16.12: 
+
+            \begin{align*}
+                P &= \frac{(3\pi^2)^{2/3}}{5}\frac{\hbar^2}{m_e}\left[\left(\frac{Z}{A}\right)\frac{\rho_c}{m_H}\right]^{5/3} \\
+                  &= \frac{(3\pi^2)^{2/3}}{5}\frac{(1.055\times 10^{-34}~{\rm kg\,m^2\,s^{-1}})^2}{9.11\times 10^{-31}~{\rm kg}}\left[\left(0.75\right)\frac{1.41\times 10^{5}~{\rm kg\,m^{-3}}}{1.674\times 10^{-27}~{\rm kg}}\right]^{5/3} \\
+                  &= 2.34\times 10^{15}~{\rm N\,m^{-2}}
+            \end{align*}
+
+        The central pressure given above can be calculated as follows:
+
+        \begin{align*}
+            P_c &= \frac{3GM_c^2}{8\pi R_c^4} \\
+                &= \frac{3\times 6.67\times 10^{-11}~{\rm N\,m^2\,kg^{-2}} \times (0.1\times 1.99\times 10^{30}~{\rm kg})^2}{8\pi\times (0.1\times 6.96\times 10^{8}~{\rm m})^4} \\
+                &= 1.34\times 10^{16}~{\rm N\,m^{-2}}.
+        \end{align*}
+
+        Electron degeneracy pressure accounts for approximately 25\% of the pressure in the core. This is not an insignificant amount. 
+
+    \item Given that we have the radius-mass relation $R\propto M$, a contraction by a factor of 10 implies a mass reduction by a factor of 10 {\huge is this correct? need to account for mass change due to hydrogen->helium fusion?}. Call this new mass $M'_c = 0.1\,M_c = 0.01\,M_\odot$. For core density, we have
+        \begin{equation*}
+            \rho'_c = \frac{3M'_c}{4\pi R'_c^3} 
+                 = \frac{3\times (0.1\times M_c)}{4\pi\times (0.1\times R_c)^3} 
+                 = \frac{0.1}{0.1^3}\frac{3M_c}{4\pi R_c^3} 
+                 = 100\times \rho_c 
+                 = 1.41\times 10^{7}~{\rm kg\,m^{-3}},
+        \end{equation*}
+
+        and for central pressure, we have 
+        \begin{equation*}
+            P'_c = \frac{3GM'_c^2}{8\pi R'_c^4} 
+                 = \frac{3G\times (0.1\times M_c)^2}{8\pi\times (0.1\times R_c)^4} 
+                 = \frac{0.1^2}{0.1^4}\frac{3GM_c^2}{8\pi R_c^4} 
+                 = 100\times P_c
+                 = 1.34\times 10^{18}~{\rm N\,m^{-2}}.
+        \end{equation*}
+
+    \item The degeneracy pressure, using $\rho = \rho'_c$ and $\frac{Z}{A} = 0.5$ for a pure helium core, is 
+        \begin{equation*}
+            P = \frac{(3\pi^2)^{2/3}}{5}\frac{(1.055\times 10^{-34}~{\rm kg\,m^2\,s^{-1}})^2}{9.11\times 10^{-31}~{\rm kg}}\left[\left(0.5\right)\frac{1.41\times 10^{7}~{\rm kg\,m^{-3}}}{1.674\times 10^{-27}~{\rm kg}}\right]^{5/3} = 2.57\times 10^{18}~{\rm N\,m^{-2}}
+        \end{equation*}
+
+        At this point, electron degeneracy accounts for most {\huge why is degeneracy pressure more than total central pressure???} of the central pressure in the star. 
+
+    \item Again using the same formulas, we find that core density is 
+        \begin{equation*}
+            \rho_c = \frac{3M_c}{4\pi R_c^3} = \frac{3\times (0.1 \times 8\times 1.99\times 10^{30}~{\rm kg})}{4\pi \times (0.1\times 8\times 6.96\times 10^{8}~{\rm m})^3} = 2.2\times 10^{3}~{\rm kg\,m^{-3}}, 
+        \end{equation*}
+
+        central pressure is 
+        \begin{equation*}
+            P_c = \frac{3GM_c^2}{8\pi R_c^4} 
+                = \frac{3\times 6.67\times 10^{-11}~{\rm N\,m^2\,kg^{-2}} \times (0.1\times 8\times 1.99\times 10^{30}~{\rm kg})^2}{8\pi\times (0.1\times 8\times 6.96\times 10^{8}~{\rm m})^4} 
+                = 2.1\times 10^{14}~{\rm N\,m^{-2}},
+        \end{equation*}
+
+        and electron degeneracy pressure is 
+        \begin{equation*}
+            P = \frac{(3\pi^2)^{2/3}}{5}\frac{(1.055\times 10^{-34}~{\rm kg\,m^2\,s^{-1}})^2}{9.11\times 10^{-31}~{\rm kg}}\left[\left(0.5\right)\frac{2.2\times 10^{3}~{\rm kg\,m^{-3}}}{1.674\times 10^{-27}~{\rm kg}}\right]^{5/3} = 1.16\times 10^{12}~{\rm N\,m^{-2}}.   
+        \end{equation*}
+
+        Degeneracy pressure is not as important in this higher mass star as it was for the lower mass star. This implies that {\huge something about being able to get more gravitational pressure because less outward resistance, more gravitational pressure -> hotter -> can fuse heavier elements -> ???}
+
+\end{enumerate}
+
+% problem 2
+\section*{Problem 2: Hot Jupiters and tidal disruption}
+
+\begin{enumerate}[label=(\alph*)]
+    \item The point at which an object is tidally disrupted is the Roche limit. We can appproximate this by assuming that this is the point when the differential force is greater than the self-gravity of the planet: 
+        \begin{align*}
+            \frac{GM_J}{R_J^2} < \frac{2GM_SR_J}{r^3}.
+        \end{align*}
+
+        If we assume that both the Sun-like star and the Jupiter-like planet are spherical, then 
+        \begin{align*}
+            \rho &= \frac{M}{V} = \frac{M}{\frac{4}{3}\pi R^3} = \frac{3M}{4\pi R^3}.        \end{align*}
+
+        Substituting this into the previous equation, cancelling terms, and rearranging, we find the following expression:
+        \begin{alignat*}{2}
+            &&G \left(\frac{4\pi\rho_J R_J}{3}\right) &<  \frac{2GR_J}{r^3}\left(\frac{4\pi\rho_S R_S^3}{3}\right) \\
+            \implies&& \rho_J &< \frac{2\rho_S R_S^3}{r^3} \\
+            \implies&& r &< \left(\frac{2\rho_S R_S^3}{\rho_J}\right)^{1/3} \\
+            \implies&& r &< \left(2\,\frac{\rho_S}{\rho_J}\right)^3 R_S.
+        \end{alignat*}
+
+    \item First we need to calculate the mean densities of the star and the planet. If we assume constant density everywhere, then 
+        \begin{alignat*}{2}
+            \rho_S &= \frac{3M_S}{4\pi R_S^3} &\qquad\qquad\qquad \rho_J &= \frac{3M_J}{4\pi R_J^3} \\
+                   &= \frac{3\times 1.9891\times 10^{33}~{\rm g}}{4\pi\times (6.955\times 10^{10}~{\rm cm})^3} &&= \frac{3\times 1.90\times 10^{30}~{\rm g}}{4\pi\times (7.1492\times 10^{9}~{\rm cm})^3} \\
+                   &= 1.411~{\rm g\,cm^{-3}} &&= 1.241~{\rm g\,cm^{-3}} 
+        \end{alignat*}
+
+        Then the Roche limit $r$ is given by 
+        \begin{equation*}
+            r = 2.456\left(\frac{1.411~{\rm g\,cm^{-3}}}{1.241~{\rm g\,cm^{-3}}}\right)^{1/3} R_S = 2.56\,R_S
+        \end{equation*}
+
+        Since this is greater than the radius of the star, this means that the tidal disruption limit is outside the host star.
+
+        We can also write the distance in AU:
+        \begin{equation*}
+            r = 2.56\,R_S = 2.56\times 6.955\times 10^{10}~{\rm cm} = 1.78\times 10^{11}~{\rm cm} = 0.012~{\rm AU}.
+        \end{equation*}
+
+    \item Since we know the tidal disruption radius, and the star is a solar mass star, we can use the simplified form (probably why we did the AU calculation?) of Kepler's Third Law:
+        \begin{equation*}
+            P^2 = a^3,
+        \end{equation*}
+        where $P$ is in years and $a$ is in AU. Then 
+        \begin{equation*}
+            P= a^{3/2} = 0.012^{3/2} = 0.0013~{\rm years} = 11.4~{\rm hours}
+        \end{equation*}
+
+        Since we have the masses of the star and the planet, we can use the general form of Kepler's Third Law (to verify),
+        \begin{equation*}
+            P^2 = \frac{4\pi^2 a^3}{G(m_1+m_2)},
+        \end{equation*}
+        where $P$ is in seconds, $m_1, m_2$ are in kilograms, and $a$ is in meters. Then
+        \begin{align*}
+            (P~{\rm s})^2 &= \frac{4\pi^2 r^3}{G(M_S+M_J)} \\
+                            &= \frac{4\pi^2\times (1.78\times 10^{9}~{\rm m})^3}{6.67\times 10^{-11}~{\rm N\,m^2\,kg^{-2}} \times (1.9891\times 10^{30}~{\rm kg} + 1.90\times 10^{27}~{\rm kg})} \\
+                              &= 1.68\times 10^{9}~{\rm s}^2
+        \end{align*}
+
+        Taking the square root and converting to hours, we find that the orbital period is
+        \begin{equation*}
+            P = \sqrt{1.68\times 10^{9}~{\rm s}^2} = 4.095\times 10^{4}~{\rm s} = 11.4~{\rm hours},
+        \end{equation*}
+        as expected.
+
+    \item 
+
+\end{enumerate}
+
+
+
+
+% problem 3
+\section*{Problem 3:}
+\begin{itemize}
+    \item radius of Jupiter: $R_J = 69,911~{\rm km} = 6.991\times 10^{9}~{\rm cm}$
+    \item mass of Jupiter: $M_J = 1.898\times 10^{30}~{\rm g}$
+    \item mean distance from Sun to Jupiter: $d = 778.5 \times 10^{6}~{\rm km} = 7.785 \times 10^{13}~{\rm cm}$
+    \item luminosity of Sun: $L_\odot = 3.84 \times 10^{33}~{\rm erg\,s^{-1}}$
+\end{itemize}
+
+\begin{enumerate}[label=(\alph*)]
+    
+    \item We can find the total energy emitted in the infrared by multiplying the flux of Jupiter by its surface area:
+        \begin{equation*}
+            L = F*4\pi R^2 = 1.41\times 10^{4}~{\rm erg\,s^{-1}}\times 4\pi\times (6.991 \times 10^{9}~{\rm cm})^2 = 8.66\times 10^{24}~{\rm erg\,s^{-1}}.
+        \end{equation*}
+   
+    \item Since the distance from Jupiter to the Sun is very large relative to the radius of Jupiter, we can approximate the shape of Jupiter on which light is incident as a circle, which has area $4\pi R_J^2.$ Then the rate of energy absorbed by Jupiter from solar radiation is 
+    \begin{align*}
+        L &= (1-A)*\frac{L_\odot}{4\pi d^2}*4\pi R_J^2 \\
+          &= (1-A)*\frac{L_\odot R_J^2}{d^2} \\
+          &= (1-0.343)\frac{(3.84 \times 10^{33}~{\rm erg\,s^{-1}}) (6.991 \times 10^{9}~{\rm cm})^2}{(7.785 \times 10^{13}~{\rm cm})^2} \\
+          &= 2.03\times 10^{25}~{\rm erg\,s^{-1}}.
+    \end{align*}
+    
+    {\huge this is supposed to be less than the energy emitted???}
+
+    \item
+    \item
+
+\end{enumerate}
+
+\end{document}
