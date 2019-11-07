@@ -1,0 +1,123 @@
+\documentclass[a4paper,10pt, twocolumn]{article}
+\usepackage{geometry}
+\usepackage{graphicx}
+\graphicspath{ {./figures/} }
+\usepackage{caption}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{mathtools}
+\usepackage{amsmath,amsthm,amssymb,cancel,bm,upgreek}
+\usepackage{floatrow}
+\usepackage{lastpage}
+\geometry{total={210mm,297mm},
+left=25mm,right=25mm,%
+bindingoffset=0mm, top=20mm,bottom=25mm}
+\setlength{\parindent}{0pt}
+
+\newcommand{\linia}{\rule{\linewidth}{0.5pt}}
+\newcommand{\fig}[1]{\centerline{\includegraphics[width=0.6\columnwidth]{#1}}}
+\AtBeginDocument{%
+  \setlength\abovedisplayskip{-3pt}
+  \setlength\belowdisplayskip{5pt}}
+   
+
+% title configuration
+\makeatletter
+\def\@maketitle{%
+\begin{center}
+{\huge \textsc{\@title}\par}
+\vspace{1em}
+\\
+\@author\\
+\linia
+\vspace{2em}
+\end{center}
+}
+\makeatother
+
+% --------------------------------------------- %
+\begin{document}
+\title{Formation of Planetary Nebulae\\
+    \Large AST221H1 - Fall 2019 | University of Toronto}
+\author{Jeff Shen}
+\date{\today}
+\maketitle
+
+\section{Introduction}
+A planetary nebula (abbreviated PN or plural PNe) is an interstellar cloud composed of ionized gas ejected from a low- to intermediate-mass star near the end of its stellar lifetime. 
+
+
+\subsection{things to write about}
+general planetary nebulae stuff
+
+mira variables, oh/ir stars, pulsation theory 
+
+mass loss of agb stars 
+
+agb transition to planetary nebula, protoplanetary nebula
+
+conditions required, temperatures required/reached, timescales of stages
+
+central star 
+
+enrichment 
+
+\subsection{potentially useful sources}
+kogan 9.3 (113)
+
+kogan fig 9.48 + caption (142)
+
+kogan 9.3.5, 9.3.6 (124-132)
+
+co 516-519
+
+co example 3.1 (626)
+
+pottasch chapter x (240-270). focus on part f.
+
+\subsection{Readings}
+
+https://www.cfa.harvard.edu/research/oir/planetary-nebulae
+
+https://en.wikipedia.org/wiki/Mira_variable
+
+https://en.wikipedia.org/wiki/Asymptotic_giant_branch
+
+https://en.wikipedia.org/wiki/Protoplanetary_nebula
+
+https://en.wikipedia.org/wiki/Planetary_nebula#Origins
+
+https://web.williams.edu/Astronomy/research/PN/nebulae/nebulaegallery.php
+
+
+\begin{thebibliography}{9}
+    \bibitem{pot}
+    Pottasch, S. R.,
+    \textit{Planetary Nebulae},
+    D. Reidel Publishing Company, 
+    1984.
+
+    %\bibitem{kwok}
+    %Kwok, Sun,
+    %\textit{The Origin and Evolution of Planetary Nebulae},
+    %Cambridge University Press,
+    %2000.
+
+    \bibitem{co}
+    Carroll, B.W., Ostlie, D.A.,
+    \textit{An Introduction to Modern Astrophysics},
+    Pearson Education Limited, 
+    2014.
+
+    \bibitem{kogan}
+    Bisnovatyi-Kogan, G.S.,
+    \textit{Stellar Physics 2: Stellar Evolution and Stability},
+    Springer,
+    2011.
+
+\end{thebibliography}
+
+\end{document}
