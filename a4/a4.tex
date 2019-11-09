@@ -63,12 +63,12 @@
             \rho_c = \frac{3M_c}{4\pi R_c^3} = \frac{3\times (0.1 \times 1.99\times 10^{30}~{\rm kg})}{4\pi \times (0.1\times 6.96\times 10^{8}~{\rm m})^3} = 1.41\times 10^{5}~{\rm kg\,m^{-3}}
         \end{equation*}
 
-        For hydrogen, $Z=1$, $A=1$, and for helium, $Z=2$, $A=4$, so $\frac{Z}{A}= 0.5\left(\frac{1}{1}\right) + 0.5\left(\frac{2}{4}\right) = 0.5 + 0.25 = 0.75$. Using this and the other information we have, we can calculate the electron degeneracy pressure using equation 16.12: 
+        For hydrogen, $Z=1$, $A=1$, and for helium, $Z=2$, $A=4$, so assuming a 50-50 composition of hydrogen and helium, $\frac{Z}{A}= \frac{1+2}{1+4} = \frac{3}{5}$. Using this and the other information we have, we can calculate the electron degeneracy pressure using equation 16.12: 
 
             \begin{align*}
                 P &= \frac{(3\pi^2)^{2/3}}{5}\frac{\hbar^2}{m_e}\left[\left(\frac{Z}{A}\right)\frac{\rho_c}{m_H}\right]^{5/3} \\
-                  &= \frac{(3\pi^2)^{2/3}}{5}\frac{(1.055\times 10^{-34}~{\rm kg\,m^2\,s^{-1}})^2}{9.11\times 10^{-31}~{\rm kg}}\left[\left(0.75\right)\frac{1.41\times 10^{5}~{\rm kg\,m^{-3}}}{1.674\times 10^{-27}~{\rm kg}}\right]^{5/3} \\
-                  &= 2.34\times 10^{15}~{\rm N\,m^{-2}}
+                  &= \frac{(3\pi^2)^{2/3}}{5}\frac{(1.055\times 10^{-34}~{\rm kg\,m^2\,s^{-1}})^2}{9.11\times 10^{-31}~{\rm kg}}\left[\left(\frac{3}{5}\right)\frac{1.41\times 10^{5}~{\rm kg\,m^{-3}}}{1.674\times 10^{-27}~{\rm kg}}\right]^{5/3} \\
+                  &= 1.62\times 10^{15}~{\rm N\,m^{-2}}
             \end{align*}
 
         The central pressure given above can be calculated as follows:
@@ -79,7 +79,7 @@
                 &= 1.34\times 10^{16}~{\rm N\,m^{-2}}.
         \end{align*}
 
-        Electron degeneracy pressure accounts for approximately 25\% of the pressure in the core. This is not an insignificant amount. 
+        Electron degeneracy pressure accounts for approximately 10\% of the pressure in the core. This is not an insignificant amount. 
 
     \item Given that we have the radius-mass relation $R\propto M$, a contraction by a factor of 10 implies a mass reduction by a factor of 10 {\huge is this correct? need to account for mass change due to hydrogen->helium fusion?}. Call this new mass $M'_c = 0.1\,M_c = 0.01\,M_\odot$. For core density, we have
         \begin{equation*}
@@ -99,7 +99,7 @@
                  = 1.34\times 10^{18}~{\rm N\,m^{-2}}.
         \end{equation*}
 
-    \item The degeneracy pressure, using $\rho = \rho'_c$ and $\frac{Z}{A} = 0.5$ for a pure helium core, is 
+    \item The degeneracy pressure, using $\rho = \rho'_c$ and $\frac{Z}{A} = \frac{2}{4} = 0.5$ for a pure helium core, is 
         \begin{equation*}
             P = \frac{(3\pi^2)^{2/3}}{5}\frac{(1.055\times 10^{-34}~{\rm kg\,m^2\,s^{-1}})^2}{9.11\times 10^{-31}~{\rm kg}}\left[\left(0.5\right)\frac{1.41\times 10^{7}~{\rm kg\,m^{-3}}}{1.674\times 10^{-27}~{\rm kg}}\right]^{5/3} = 2.57\times 10^{18}~{\rm N\,m^{-2}}
         \end{equation*}
