@@ -81,30 +81,30 @@
 
         Electron degeneracy pressure accounts for approximately 10\% of the pressure in the core. This is not an insignificant amount. 
 
-    \item Given that we have the radius-mass relation $R\propto M$, a contraction by a factor of 10 implies a mass reduction by a factor of 10 {\huge is this correct? need to account for mass change due to hydrogen->helium fusion?}. Call this new mass $M'_c = 0.1\,M_c = 0.01\,M_\odot$. For core density, we have
+    \item Assume that the core mass remains the same. Then for core density, we have
         \begin{equation*}
-            \rho'_c = \frac{3M'_c}{4\pi R'_c^3} 
-                 = \frac{3\times (0.1\times M_c)}{4\pi\times (0.1\times R_c)^3} 
-                 = \frac{0.1}{0.1^3}\frac{3M_c}{4\pi R_c^3} 
-                 = 100\times \rho_c 
-                 = 1.41\times 10^{7}~{\rm kg\,m^{-3}},
+            \rho'_c = \frac{3M_c}{4\pi R'_c^3} 
+                 = \frac{3M_c}{4\pi\times (0.1\times R_c)^3} 
+                 = \frac{1}{0.1^3}\frac{3M_c}{4\pi R_c^3} 
+                 = 1000\times \rho_c 
+                 = 1.41\times 10^{8}~{\rm kg\,m^{-3}},
         \end{equation*}
 
         and for central pressure, we have 
         \begin{equation*}
-            P'_c = \frac{3GM'_c^2}{8\pi R'_c^4} 
-                 = \frac{3G\times (0.1\times M_c)^2}{8\pi\times (0.1\times R_c)^4} 
-                 = \frac{0.1^2}{0.1^4}\frac{3GM_c^2}{8\pi R_c^4} 
-                 = 100\times P_c
-                 = 1.34\times 10^{18}~{\rm N\,m^{-2}}.
+            P'_c = \frac{3GM_c^2}{8\pi R'_c^4} 
+                 = \frac{3GM_c^2}{8\pi\times (0.1\times R_c)^4} 
+                 = \frac{1}{0.1^4}\frac{3GM_c^2}{8\pi R_c^4} 
+                 = 10000\times P_c
+                 = 1.34\times 10^{20}~{\rm N\,m^{-2}}.
         \end{equation*}
 
     \item The degeneracy pressure, using $\rho = \rho'_c$ and $\frac{Z}{A} = \frac{2}{4} = 0.5$ for a pure helium core, is 
         \begin{equation*}
-            P = \frac{(3\pi^2)^{2/3}}{5}\frac{(1.055\times 10^{-34}~{\rm kg\,m^2\,s^{-1}})^2}{9.11\times 10^{-31}~{\rm kg}}\left[\left(0.5\right)\frac{1.41\times 10^{7}~{\rm kg\,m^{-3}}}{1.674\times 10^{-27}~{\rm kg}}\right]^{5/3} = 2.57\times 10^{18}~{\rm N\,m^{-2}}
+            P = \frac{(3\pi^2)^{2/3}}{5}\frac{(1.055\times 10^{-34}~{\rm kg\,m^2\,s^{-1}})^2}{9.11\times 10^{-31}~{\rm kg}}\left[\left(0.5\right)\frac{1.41\times 10^{8}~{\rm kg\,m^{-3}}}{1.674\times 10^{-27}~{\rm kg}}\right]^{5/3} = 1.19\times 10^{20}~{\rm N\,m^{-2}}
         \end{equation*}
 
-        At this point, electron degeneracy accounts for most {\huge why is degeneracy pressure more than total central pressure???} of the central pressure in the star. 
+        At this point, electron degeneracy accounts for most of the central pressure in the star. Yes, it is important.  
 
     \item Again using the same formulas, we find that core density is 
         \begin{equation*}
@@ -145,7 +145,7 @@
             &&G \left(\frac{4\pi\rho_J R_J}{3}\right) &<  \frac{2GR_J}{r^3}\left(\frac{4\pi\rho_S R_S^3}{3}\right) \\
             \implies&& \rho_J &< \frac{2\rho_S R_S^3}{r^3} \\
             \implies&& r &< \left(\frac{2\rho_S R_S^3}{\rho_J}\right)^{1/3} \\
-            \implies&& r &< \left(2\,\frac{\rho_S}{\rho_J}\right)^3 R_S.
+            \implies&& r &< \left(2\,\frac{\rho_S}{\rho_J}\right)^{1/3} R_S.
         \end{alignat*}
 
     \item First we need to calculate the mean densities of the star and the planet. If we assume constant density everywhere, then 
@@ -216,18 +216,45 @@
             L = F*4\pi R^2 = 1.41\times 10^{4}~{\rm erg\,s^{-1}}\times 4\pi\times (6.991 \times 10^{9}~{\rm cm})^2 = 8.66\times 10^{24}~{\rm erg\,s^{-1}}.
         \end{equation*}
    
-    \item Since the distance from Jupiter to the Sun is very large relative to the radius of Jupiter, we can approximate the shape of Jupiter on which light is incident as a circle, which has area $4\pi R_J^2.$ Then the rate of energy absorbed by Jupiter from solar radiation is 
+    \item Since the distance from Jupiter to the Sun is very large relative to the radius of Jupiter, we can approximate the shape of Jupiter on which light is incident as a circle, which has area $\pi R_J^2.$ Then the rate of energy absorbed by Jupiter from solar radiation is 
     \begin{align*}
-        L &= (1-A)*\frac{L_\odot}{4\pi d^2}*4\pi R_J^2 \\
-          &= (1-A)*\frac{L_\odot R_J^2}{d^2} \\
-          &= (1-0.343)\frac{(3.84 \times 10^{33}~{\rm erg\,s^{-1}}) (6.991 \times 10^{9}~{\rm cm})^2}{(7.785 \times 10^{13}~{\rm cm})^2} \\
-          &= 2.03\times 10^{25}~{\rm erg\,s^{-1}}.
+        L &= (1-A)\times \frac{L_\odot}{4\pi d^2}\times \pi R_J^2 \\
+          &= (1-A)\times \frac{L_\odot R_J^2}{4d^2} \\
+          &= (1-0.343)\frac{(3.84 \times 10^{33}~{\rm erg\,s^{-1}}) (6.991 \times 10^{9}~{\rm cm})^2}{4\times (7.785 \times 10^{13}~{\rm cm})^2} \\
+          &= 5.09\times 10^{24}~{\rm erg\,s^{-1}}.
     \end{align*}
     
-    {\huge this is supposed to be less than the energy emitted???}
+    \item
+        {\huge not sure what it means by "beyond that explained by the absorption and re-emission of solar radiation"? you want some OTHER excess energy calculation???}
+
+        The excess rate of energy emitted by Jupiter is the difference between the rate of energy emission and the rate of energy absorption: 
+        \begin{align*}
+            L_{excess} = 8.66\times 10^{24}~{\rm erg\,s^{-1}} - 5.09\times 10^{24}~{\rm erg\,s^{-1}} = 3.57\times 10^{24}~{\rm erg\,s^{-1}}
+        \end{align*}
 
     \item
-    \item
+
+    \item The work done to move a cloud of mass $M_J$ from $r=\infty$ to $r=R_J$ is the force ($\frac{GMM_J}{r^2}$) integrated over the displacement:
+        \begin{align*}
+            W = \int_{\infty}^{R_J} \frac{GMM_J}{r^2}dr = -\frac{GMM_J}{r} \Big |_{\infty}^{R_J}
+        \end{align*}
+        Assuming that the Sun is the only object imparting a gravitational force on this cloud of mass, 
+        \begin{align*}
+            W = -\frac{GM_\odot M_J}{r} \Big |_{\infty}^{R_J}
+        \end{align*}
+
+        Since $\displaystyle\lim_{r\to\infty}\frac{1}{r} = 0$, we can rewrite this as
+        \begin{align*}
+            W &= -\frac{GM_\odot M_J}{R_J} \\
+              &= -\frac{(6.67\times 10^{-11}~{\rm N\,m^2\,kg^{-2}})\times (1.989\times 10^{30}~{\rm kg})\times (1.898\times 10^{27}~{\rm kg})}{6.991 \times 10^{7}~{\rm m}} \\
+              &= -3.6\times 10^{39}~{\rm Nm}
+        \end{align*}
+
+        {\huge $Nm = J$. this seems really really high}
+
+    \item 
+
+
 
 \end{enumerate}
 
