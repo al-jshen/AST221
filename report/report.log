@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  8 NOV 2019 22:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  11 NOV 2019 17:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -7,8 +7,8 @@ entering extended mode
 LaTeX2e <2018-12-01>
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
-(/usr/local/texlive/2019/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 )
 \c@part=\count80
 \c@section=\count81
@@ -75,6 +75,11 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 (/usr/local/texlive/2019/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2018/12/27 v1.8v multicolumn formatting (FMi)
 \c@tracingmulticols=\count91
+
+
+Package multicol Warning: May not work with the twocolumn option on input line 
+141.
+
 \mult@box=\box27
 \multicol@leftmargin=\dimen113
 \c@unbalance=\count92
@@ -120,8 +125,7 @@ Package: multicol 2018/12/27 v1.8v multicolumn formatting (FMi)
 \mult@nat@firstbox=\box51
 \colbreak@box=\box52
 \mc@col@check@num=\count99
-)
-(/usr/local/texlive/2019/texmf-dist/tex/latex/tools/tabularx.sty
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2016/02/03 v2.11b `tabularx' package (DPC)
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/tools/array.sty
@@ -568,16 +572,16 @@ LaTeX Font Info:    ... okay on input line 43.
 * \topmargin=-52.36449pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=12.0pt
+* \topskip=11.0pt
 * \footskip=30.0pt
-* \marginparwidth=35.0pt
+* \marginparwidth=4.0pt
 * \marginparsep=10.0pt
 * \columnsep=19.91692pt
-* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
-* \@twocolumnfalse
+* \@twocolumntrue
 * \@twosidefalse
 * \@mparswitchfalse
 * \@reversemarginfalse
@@ -671,27 +675,74 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 61.
+
+Underfull \vbox (badness 1303) has occurred while \output is active []
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 66.
+
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 61.
+LaTeX Font Info:    Try loading font information for U+msb on input line 66.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Overfull \hbox (10.8994pt too wide) in paragraph at lines 65--66
-[]\OT1/cmr/m/n/12 The asymp-totic gi-ant branch is a re-gion on the HR-Diagram 
-pop-u-lated by low- to intermediate-
+) [1{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+
+]
+<./figures/pulsation_massloss.png, id=15, 933.4875pt x 596.2275pt>
+File: ./figures/pulsation_massloss.png Graphic file (type png)
+<use ./figures/pulsation_massloss.png>
+Package pdftex.def Info: ./figures/pulsation_massloss.png  used on input line 8
+0.
+(pdftex.def)             Requested size: 231.88997pt x 148.11034pt.
+
+Overfull \hbox (44.50272pt too wide) detected at line 93
+[]
  []
 
-[1
 
-{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \vbox (badness 1881) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1371) in paragraph at lines 107--108
+[]\OT1/cmr/m/n/10.95 Many other mass loss equa-tions, such as
+ []
+
+
+Underfull \hbox (badness 3557) in paragraph at lines 122--123
+[]\OT1/cmr/m/n/20.74 interacting stel-lar winds
+ []
+
+<./figures/period_luminosity.png, id=17, 563.10374pt x 325.215pt>
+File: ./figures/period_luminosity.png Graphic file (type png)
+<use ./figures/period_luminosity.png>
+Package pdftex.def Info: ./figures/period_luminosity.png  used on input line 13
+6.
+(pdftex.def)             Requested size: 231.88997pt x 133.92456pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2 <./figures/pulsation_massloss.png>]
+Underfull \hbox (badness 4621) in paragraph at lines 138--139
+\OT1/cmr/m/n/20.74 mass loss (which is re-
+ []
+
+
+Underfull \hbox (badness 1077) in paragraph at lines 138--139
+\OT1/cmr/m/n/20.74 ally just grav-i-ta-tional en-
+ []
+
+
+Overfull \hbox (35.16872pt too wide) in paragraph at lines 156--157
+[]\OT1/cmr/m/n/10.95 https://www.cfa.harvard.edu/research/oir/planetary-
+ []
+
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.107 https://en.wikipedia.org/wiki/Mira_
+l.158 https://en.wikipedia.org/wiki/Mira_
                                          variable
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -699,7 +750,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.108 
+l.159 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -707,7 +758,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.109 https://en.wikipedia.org/wiki/Asymptotic_
+l.160 https://en.wikipedia.org/wiki/Asymptotic_
                                                giant_branch
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -715,15 +766,21 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.110 
+l.161 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
+
+Overfull \hbox (39.49544pt too wide) in paragraph at lines 160--161
+[]\OT1/cmr/m/n/10.95 https://en.wikipedia.org/wiki/Asymptotic$[]\OML/cmm/m/it/1
+0.95 iant[]ranch$ 
+ []
+
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.111 ...s://en.wikipedia.org/wiki/Protoplanetary_
+l.162 ...s://en.wikipedia.org/wiki/Protoplanetary_
                                                   nebula
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -731,21 +788,27 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.112 
+l.163 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
+
+Overfull \hbox (29.66336pt too wide) in paragraph at lines 162--163
+[]\OT1/cmr/m/n/10.95 https://en.wikipedia.org/wiki/Protoplanetary$[]\OML/cmm/m/
+it/10.95 ebula$ 
+ []
+
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.113 https://en.wikipedia.org/wiki/Planetary_
+l.164 https://en.wikipedia.org/wiki/Planetary_
                                               nebula#Origins
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! You can't use `macro parameter character #' in math mode.
-l.113 ...//en.wikipedia.org/wiki/Planetary_nebula#
+l.164 ...//en.wikipedia.org/wiki/Planetary_nebula#
                                                   Origins
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -755,16 +818,32 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.114 
+l.165 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-[2]
+
+Overfull \hbox (42.84967pt too wide) in paragraph at lines 164--165
+[]\OT1/cmr/m/n/10.95 https://en.wikipedia.org/wiki/Planetary$[]\OML/cmm/m/it/10
+.95 ebulaOrigins$ 
+ []
+
+
+Overfull \hbox (158.26508pt too wide) in paragraph at lines 166--167
+[]\OT1/cmr/m/n/10.95 https://web.williams.edu/Astronomy/research/PN/nebulae/neb
+ulaegallery.php 
+ []
+
+
+Overfull \hbox (31.18408pt too wide) in paragraph at lines 168--169
+[]\OT1/cmr/m/n/10.95 https://www.spacetelescope.org/images/potw1530a/ 
+ []
+
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.119 https://en.wikipedia.org/wiki/Stellar_
+l.170 https://en.wikipedia.org/wiki/Stellar_
                                             wind
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -772,7 +851,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.120 
+l.171 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -780,7 +859,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.121 http://www-star.st-and.ac.uk/~pw31/AGB_
+l.172 http://www-star.st-and.ac.uk/~pw31/AGB_
                                              popular.html
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -788,42 +867,53 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.122 
+l.173 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 175--176
-
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
+[]\OT1/cmr/m/n/10.95 http://www-star.st-
  []
 
 
+Underfull \hbox (badness 2435) in paragraph at lines 224--225
+\OT1/cmr/m/n/10.95 At-mo-spheric Dy-nam-ics in M-Type AGB
+ []
+
+[3 <./figures/period_luminosity.png>] 
 AED: lastpage setting LastPage
-[3] (./report.aux) ) 
+[4
+
+] (./report.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 14858 strings out of 492616
- 269378 string characters out of 6129482
- 472804 words of memory out of 5000000
- 18643 multiletter control sequences out of 15000+600000
- 543060 words of font info for 62 fonts, out of 8000000 for 9000
+ 14874 strings out of 492616
+ 269781 string characters out of 6129482
+ 475821 words of memory out of 5000000
+ 18655 multiletter control sequences out of 15000+600000
+ 543062 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,6n,63p,653b,317s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmmi12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-y10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
-8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12
-.pfb>
-Output written on report.pdf (3 pages, 117507 bytes).
+ 41i,10n,63p,653b,317s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
+></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
+</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
+sr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
+/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/l
+ocal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loca
+l/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local
+/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/t
+exlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on report.pdf (4 pages, 568851 bytes).
 PDF statistics:
- 54 PDF objects out of 1000 (max. 8388607)
- 38 compressed objects within 1 object stream
+ 66 PDF objects out of 1000 (max. 8388607)
+ 44 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

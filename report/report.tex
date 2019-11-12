@@ -1,4 +1,4 @@
-\documentclass[a4paper,12pt]{article}
+\documentclass[a4paper,11pt,twocolumn]{article}
 \usepackage{geometry}
 \usepackage{graphicx}
 \graphicspath{ {./figures/} }
@@ -19,7 +19,7 @@ bindingoffset=0mm, top=20mm,bottom=25mm}
 \setstretch{1.125}
 
 \newcommand{\linia}{\rule{\linewidth}{0.5pt}}
-\newcommand{\fig}[1]{\centerline{\includegraphics[width=0.6\columnwidth]{#1}}}
+\newcommand{\fig}[1]{\centerline{\includegraphics[width=1.0\columnwidth]{#1}}}
 \AtBeginDocument{%
   \setlength\abovedisplayskip{-3pt}
   \setlength\belowdisplayskip{5pt}}
@@ -29,7 +29,7 @@ bindingoffset=0mm, top=20mm,bottom=25mm}
 \makeatletter
 \def\@maketitle{%
 \begin{center}
-{\huge \textsc{\@title}\par}
+{\Large \textsc{\@title}\par}
 \vspace{1em}
 \\
 \@author\\
@@ -42,20 +42,25 @@ bindingoffset=0mm, top=20mm,bottom=25mm}
 % --------------------------------------------- %
 \begin{document}
 \title{Formation of Planetary Nebulae\\
-    \Large AST221H1 - Fall 2019 | University of Toronto}
+    \large AST221H1 - Fall 2019 | University of Toronto}
 \author{Jeff Shen}
 \date{\today}
 \maketitle
 
 \section{Introduction}
 
+{\huge cite your images!!!}
+
 {\huge big agb star, start with lots of mass, mass loss (reimers formula) due to:, pulsation shake dust (mira variables), radiation blow dust = stellar winds (dust driven, line driven). weak gravity because big radius, smallish mass, makes it easy to blow dust away. isw theory, velocity of dust. protoplanetary nebula. planetary nebula. timescales}
 
 A planetary nebula (abbreviated PN or plural PNe) is an interstellar cloud composed of ionized gas ejected from a low- to intermediate-mass star near the end of its stellar lifetime. The vibrant colours associated with PNe are caused by ionizing ultraviolet radiation from the central star (CSPN), which radiates at very high temperatures, energizing the surrounding gases. As the electrons in those atoms return to lower energy levels, they re-emit photons in the visible wavelength, producing a bright glow. 
 
+
+% enrichment %
 PNe play an important role in the enrichment of the interstellar medium (ISM) and galaxies. During the later stages of and AGB star's lifetime (when it is classified as a thermally-pulsating AGB star, or TP-AGB star), a thermal pulse caused by the unstable double-shell burning causes metals from the core to be mixed into the outer layers of the star in a processed called \textit{dredge-up}. When a PN is formed, stellar winds carry these heavier elements—which are now closer to the surface of the star and thus are easier to expel—into the ISM. \cite{iben} 
 
-This paper aims to to explore the transition of asymptotic-giant-branch (AGB) stars as they form a planetary nebulae, as well as the mechanisms that drive the transition. Despite the fact that the physics behind some of these mechanisms is not well understood quantitatively \cite{schoenberner}, an attempt will be made to present theories on the conditions necessary for the formation of PNe as well as the causes of formation.
+
+This paper aims to to explore the transition of asymptotic-giant-branch (AGB) stars as they form a planetary nebulae, as well as the mechanisms that drive the transition. Despite the fact that the physics behind some of these mechanisms is not well understood quantitatively \cite{schoenberner}, an attempt will be made to present theories on the causes of formation of PNe.
 
 
 Requires CSPN temperature of 30,000K and a density of 100 particles per ${\rm cm^{-3}}$ for glow to be visible.
@@ -70,21 +75,67 @@ Mass loss plays a pivotal role in the formation of PNe, as it explains why a mas
 
 Pulsation causes fluctuations in stellar radius and consequently, produces shock waves which levitate material in the atmosphere. 
 
-AGB stars When a star begins pulsating with a period of 60 days, 
+McDonald and Zijlstra found that when a star begins pulsating with a period of 60 days, mass loss is triggered, and "a second rapid mass-loss-rate enhancement is suggested when the star transitions to the fundamental pulsation mode, at a period of ~300 days."\cite{mcdonald} This sharp increase in mass loss rate at $P\sim 300$ days is supported by empirical data from Vassiliadis and Wood \cite{wood}, who found the following relation between pulsation period and mass loss for Miras:
 
+\fig{pulsation_massloss}
+
+
+The {\huge researchers} give the relation 
+
+\begin{equation*}
+    \log \dot M~{[\rm M_\odot\,yr^{-1}]} = -11.4 + 0.0123\,P~{[\rm days]}
+\end{equation*}
+for stars with $M\leq 2.5M\odot$, and {\huge help how to write this without it being really ugly?}
+
+\begin{align*}
+    \log \dot M~{[\rm M_\odot\,yr^{-1}]} &= -11.4 \\
+                                         &+ 0.0125\,\left(P~{[\rm days]} - 100\left(\frac{M_*}{M_\odot} - 2.5\right)\right)
+\end{align*}
+for stars with $M\geq 2.5M\odot$. 
 
 \section{Stellar Winds}
 
-For cooler stars, this material is mainly composed of dust grains which have condensed in the outer atmospheres. ``The grains can absorb radiation over a broad range of wavelengths, so the outflows of the cool stars are said to be ‘continuum driven’ winds." \cite{lamers}
+For cooler stars, this material is mainly composed of dust grains which have condensed in the outer atmospheres. ``The grains can absorb radiation over a broad range of wavelengths, so the outflows of the cool stars are said to be ‘continuum driven’ winds." \cite{lamers} {\huge what wind speeds??? 10km/s. source?}
 
-{\huge reimers mass loss formula}
+Unfortunately, as reliable (theoretical) models are not available, many turn to Reimers' formula \cite{reimers} for mass loss by stellar winds:
 
-``In the case of hot early-type stars the winds are driven by the scattering of radiation by line opacity, so their outflows are called ‘line driven’ winds." \cite{lamers}
+\begin{equation*}
+    \dot M = -4\times 10^{-13}\,\eta \left(\frac{L_*R_*}{M_*}\right)~{\rm M_\odot\,yr^{-1}},~{\rm \eta \sim 1}
+\end{equation*}
+where $L_*, R_*$, and $M_*$ are given in solar units. 
+
+Many other mass loss equations, such as the one given by Schröeder and Cuntz \cite{schroeder} as an improvement—although it is "not applicable to molecule-driven, dust-driven, and pulsational winds"—for estimating mass loss in giants with low gravity, are merely variations of Reimers' equation:
+
+\begin{equation*}
+    \dot M = \eta\,\frac{L_*R_*}{M_*}\,\left(\frac{T_{eff}}{4000\,K}\right)^{3.5}\left(1+\frac{g_\odot}{4300g_*}\right),
+\end{equation*}
+where $L_*, R_*$, and $M_*$ are defined as before, $g_*$ and $g_\odot$ are the stellar and solar surface gravity respectively, and $\eta = 8 (\pm 1) \times 10^{-14}~{\rm M_\odot\,yr^{-1}}$.
+
+
+
+
+
+``In the case of hot early-type stars the winds are driven by the scattering of radiation by line opacity, so their outflows are called ‘line driven’ winds." \cite{lamers} {\huge these winds can reach speeds of up to 2000km/s. source?}
 
 {\huge nobody really knows what causes superwinds}
 
 {\huge interacting stellar winds model}
 
+
+\section{Mira Variables}
+
+Using data from Mira variables in the Large Magellanic Cloud (LMC), Glass and Evans give a period-luminosity relation for Mira variables: 
+
+\begin{equation*}
+    M_{bol} = 0.76\,(\pm 0.11) - 2.09\log P~\text{\cite{glass}}.
+\end{equation*}
+
+This suggests that for Mira stars with higher periods (and thus are further along in their stellar evolution) have higher luminosities. Some LMC Miras are plotted in the figure below:
+
+\vspace{0.2cm}
+\fig{period_luminosity}
+
+{\huge how this relates to reimers formula (which also assumes mass loss (which is really just gravitational energy carried away by stellar winds) is proportional to luminosity)}
 
 \subsection{potentially useful sources}
 kogan 9.3 (113)
@@ -139,6 +190,9 @@ http://www-star.st-and.ac.uk/~pw31/AGB_popular.html
 
     %``The early asymptotic giant branch stars are shown to pulsate in the fundamental mode with periods from 30 to 400 day. The rate of period change gradually increases as the star evolves."
 
+    \bibitem{glass}
+    Glass, I.S., Evans, T.L. 1981, A period-luminosity relation for Mira variables in the Large Magellanic Cloud, Nature, 291, 303
+
     \bibitem{habing}
     Habing, H.J. 1990, From Miras to Planetary Nebulae. Which Path to Stellar Evolution?, 16 
 
@@ -172,7 +226,7 @@ http://www-star.st-and.ac.uk/~pw31/AGB_popular.html
     %``Wind-driving in asymptotic giant branch (AGB) stars is commonly attributed to a two-step process. First, matter in the stellar atmosphere is levitated by shock waves, induced by stellar pulsation, and second, this matter is accelerated by radiation pressure on dust, resulting in a wind."
 
     \bibitem{pottasch}
-    Pottasch, S.R. 1984, Planetary Nebulae (D. Reidel Publishing Company) \\
+    Pottasch, S.R. 1984, Planetary Nebulae (D. Reidel Publishing Company)
 
     \bibitem{prialnik}
     Prialnik, D. 2000, An Introduction to the Theory of Stellar Structure and Evolution (Cambridge University Press)
@@ -180,10 +234,16 @@ http://www-star.st-and.ac.uk/~pw31/AGB_popular.html
     \bibitem{iben}
     Iben, I., Renzini, A. 1983, Asymptotic giant branch evolution and beyond, Annu. Rev. Astron. Astrophys., 21, 271
 
+    \bibitem{reimers}
+    Reimers, D. 1975, Circumstellar absorption lines and mass loss from red giants, Memoires of the Societe Royale des Sciences de Liege, 8, 369
+    
     \bibitem{schoenberner}
     Schönberner, D., Blöcker, T. 1993, Evolution on the AGB and beyond, ASPCS, 45, 337
 
     %Nobody knows what's going on. 
+
+    \bibitem{schroeder}
+    Schröeder, K.P., Cuntz, M. 2005, A New Version of Reimers’ law of Mass Loss Based on a Physical Approach, ApJ, 630, L73
 
     %\bibitem{soker}    
     %Soker, N. 1998, Binary Progenitor Models for Bipolar Planetary Nebulae, ApJ, 496, 833
@@ -194,6 +254,10 @@ http://www-star.st-and.ac.uk/~pw31/AGB_popular.html
     %``Stellar pulsation may play a key role: it is closely associated with evolutionary phases where substantial mass loss occurs, and there are good physical reasons to expect pulsation to cause, or at least greatly to enhance, mass loss."
 
     %``Prodigious mass loss must occur before or during the ascent of the asymptotic giant branch, because white dwarf stars, with masses typically of 0.6-1.0 $M_\odot$, are formed from progenitors with masses up to 5 or 6 $M_\dot$, or more$\ldots$ This has a natural explanation, supported by observed mass-loss rates, in terms of rapid pulsation-induced mass loss during the brief but very common Mira stage of evolution at the tip of the asymptotic giant branch." 
+
+    \bibitem{wood}
+    Vassiliadis, E., Wood, P.R. 1993, Evolution of Low- and Intermediate-Mass Stars to the End of the Asymptotic Giant Branch with Mass Loss, ApJ, 413, 641
+
 
 \end{thebibliography}
 
