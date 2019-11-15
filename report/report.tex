@@ -1,4 +1,4 @@
-\documentclass[a4paper,11pt,twocolumn]{article}
+\documentclass[a4paper,11pt]{article}
 \usepackage{geometry}
 \usepackage{graphicx}
 \graphicspath{ {./figures/} }
@@ -51,10 +51,18 @@ bindingoffset=0mm, top=20mm,bottom=25mm}
 
 {\huge cite your images!!!}
 
+\begin{equation*}
+    \dot M = 4\pi r^2 \rho v 
+\end{equation*}
+
+
+\begin{equation*}
+    \log \dot M~{[\rm M_\odot\,yr^{-1}]} = -11.4 + 0.0125\,\left(P~{[\rm days]} - 100\left(\frac{M_*}{M_\odot} - 2.5\right)\right)
+\end{equation*}
+
 {\huge big agb star, start with lots of mass, mass loss (reimers formula) due to:, pulsation shake dust (mira variables), radiation blow dust = stellar winds (dust driven, line driven). weak gravity because big radius, smallish mass, makes it easy to blow dust away. isw theory, velocity of dust. protoplanetary nebula. planetary nebula. timescales}
 
-A planetary nebula (abbreviated PN or plural PNe) is an interstellar cloud composed of ionized gas ejected from a low- to intermediate-mass star near the end of its stellar lifetime. The vibrant colours associated with PNe are caused by ionizing ultraviolet radiation from the central star (CSPN), which radiates at very high temperatures, energizing the surrounding gases. As the electrons in those atoms return to lower energy levels, they re-emit photons in the visible wavelength, producing a bright glow. 
-
+A planetary nebula (abbreviated PN or plural PNe) is an interstellar cloud composed of ionized gas ejected from a low- to intermediate-mass star near the end of its stellar lifetime. The vibrant colours associated with PNe are caused by ionizing ultraviolet radiation from the central star (CSPN). 
 
 % enrichment %
 PNe play an important role in the enrichment of the interstellar medium (ISM) and galaxies. During the later stages of and AGB star's lifetime (when it is classified as a thermally-pulsating AGB star, or TP-AGB star), a thermal pulse caused by the unstable double-shell burning causes metals from the core to be mixed into the outer layers of the star in a processed called \textit{dredge-up}. When a PN is formed, stellar winds carry these heavier elements—which are now closer to the surface of the star and thus are easier to expel—into the ISM. \cite{iben} 
@@ -104,7 +112,7 @@ Unfortunately, as reliable (theoretical) models are not available, many turn to 
 \end{equation*}
 where $L_*, R_*$, and $M_*$ are given in solar units. 
 
-Many other mass loss equations, such as the one given by Schröeder and Cuntz \cite{schroeder} as an improvement—although it is "not applicable to molecule-driven, dust-driven, and pulsational winds"—for estimating mass loss in giants with low gravity, are merely variations of Reimers' equation:
+Many other mass loss equations, such as the one given by Schröeder and Cuntz \cite{schroeder} as an improvement—although it is ``not applicable to molecule-driven, dust-driven, and pulsational winds"—for estimating mass loss in giants with low gravity, are merely variations of Reimers' equation:
 
 \begin{equation*}
     \dot M = \eta\,\frac{L_*R_*}{M_*}\,\left(\frac{T_{eff}}{4000\,K}\right)^{3.5}\left(1+\frac{g_\odot}{4300g_*}\right),
@@ -112,8 +120,9 @@ Many other mass loss equations, such as the one given by Schröeder and Cuntz \c
 where $L_*, R_*$, and $M_*$ are defined as before, $g_*$ and $g_\odot$ are the stellar and solar surface gravity respectively, and $\eta = 8 (\pm 1) \times 10^{-14}~{\rm M_\odot\,yr^{-1}}$.
 
 
+In order for gases to be ejected from the star, they must be accelerated past the escape velocity of the star. Fortunately for (late-stage) AGB stars, ``typical stellar radii [are] of several hundred solar radii. In combination with$\ldots$ masses well below 8 $M_\odot$, the resulting surface gravities are typically 4–5 orders of magnitude below that of a Sun-like star" \cite{hofner}. Thus, the low surface gravity makes {\huge something about it being easier to eject matter}
 
-
+Stellar winds causes the ejection of material into what is called a \textit{circumstellar envelope (CSE)}. This material is no longer gravitationally bound to the core of the star. {\huge source?}
 
 ``In the case of hot early-type stars the winds are driven by the scattering of radiation by line opacity, so their outflows are called ‘line driven’ winds." \cite{lamers} {\huge these winds can reach speeds of up to 2000km/s. source?}
 
@@ -121,6 +130,23 @@ where $L_*, R_*$, and $M_*$ are defined as before, $g_*$ and $g_\odot$ are the s
 
 {\huge interacting stellar winds model}
 
+
+
+
+
+
+After a superwind ejects the bulk of the circumstellar envelope from the star, the conditions for the formation of a planetary nebula are nearly met. As the CSPN continues burning its fuel and contracting, it heats up. This continues on until it reaches a temperature of approximately 30,000 $K$, at which point the photons that it emits are sufficiently energetic to ionize the surrounding gases. The electrons in the atoms of the gases are excited, and as they drop down to lower energy levels, they re-radiate in the visible spectrum, giving the characteristic glow of PNe.
+
+
+\section{Asymmetry}
+
+The complexity of interactions between all of these physical processes means that much remains unclear. There is a lack of powerful, universal theoretical models that can be used to explain how PNe form.
+
+In particular, it is unclear what gives rise to the incredible variety of shapes of PNe. Assumptions of stellar winds as being spherically symmetric around a star may help simplify and improve our understanding of the processes, but are known to be inaccurate. Woitke performed hydrodynamical simulations of dust-driven stellar winds, and concluded that ``highly dynamical and turbulent dust formation [zones]" and flow (e.g. Rayleigh-Taylor) instabilitities \cite{woitke} in stellar atmospheres lead not to symmetric, but to inhomogeneous and asymmetric dust production as seen in the figure below:
+
+\fig{dust_condensation}
+
+{\huge figure or not? something about binaries here maybe?}
 
 \section{Mira Variables}
 
@@ -137,39 +163,25 @@ This suggests that for Mira stars with higher periods (and thus are further alon
 
 {\huge how this relates to reimers formula (which also assumes mass loss (which is really just gravitational energy carried away by stellar winds) is proportional to luminosity)}
 
-\subsection{potentially useful sources}
-kogan 9.3 (113)
-
-kogan fig 9.48 + caption (142)
-
-kogan 9.3.5, 9.3.6 (124-132)
-
-co 516-519
-
-co example 3.1 (626)
-
-lamers, 373
-
+Ragland et. al. observed, using the IOTA telescope, that for well-resolved stars, ``75\% of AGB stars, 100\% of oxygen-rich Mira stars show asymmetry" \cite{ragland}. This is further evidence that Mira stars are the progenitors for PNe. 
 
 \subsection{Readings}
 
 https://www.cfa.harvard.edu/research/oir/planetary-nebulae
 
-https://en.wikipedia.org/wiki/Mira_variable
-
-https://en.wikipedia.org/wiki/Asymptotic_giant_branch
 
 https://en.wikipedia.org/wiki/Protoplanetary_nebula
-
-https://en.wikipedia.org/wiki/Planetary_nebula#Origins
 
 https://web.williams.edu/Astronomy/research/PN/nebulae/nebulaegallery.php
 
 https://www.spacetelescope.org/images/potw1530a/
 
-https://en.wikipedia.org/wiki/Stellar_wind
 
 http://www-star.st-and.ac.uk/~pw31/AGB_popular.html
+
+\section{Conclusion???}
+
+{\huge quick summary of everythin here}
 
 
 
@@ -181,9 +193,12 @@ http://www-star.st-and.ac.uk/~pw31/AGB_popular.html
     %Reimer's formula for estimating mass loss:
 
     \bibitem{bedijn}
-    Bedijn P.J. 1986, Light on Dark Matter, 119
+    Bedijn P.J. 1986, in Light on Dark Matter, ed. Israel, F.P., 119
 
     %``a star of given $M_{MS}$ evolves along the AGB towards higher luminosity until at a certain $L_*$ first overtone pulsation starts. The star then becomes a classical Mira with modest mass loss and with a low OH maser luminosity. Towards the end of the first overtone phase $\dot M$ may have increased somewhat and the star may have become a moderately strong type II OH maser source. Then a switch to fundamental mode pulsation occurs, the pulsation period becomes a factor $\sim$ 2 larger, $\dot M$ suddenly increases by a large factor (100?)"
+
+    \bibitem{demarco}
+     De Marco, O.\ 2014, Asymmetric Planetary Nebulae VI: the conference summary, Asymmetrical Planetary Nebulae VI Conference, 122
 
     \bibitem{fadeyev}
     Fadeyev, Y. A. 2017, Pulsations of Intermediate–mass Stars on the Asymptotic Giant Branch,  Astronomy Letters, 43.9, 602
@@ -194,7 +209,7 @@ http://www-star.st-and.ac.uk/~pw31/AGB_popular.html
     Glass, I.S., Evans, T.L. 1981, A period-luminosity relation for Mira variables in the Large Magellanic Cloud, Nature, 291, 303
 
     \bibitem{habing}
-    Habing, H.J. 1990, From Miras to Planetary Nebulae. Which Path to Stellar Evolution?, 16 
+    Habing, H.J. 1990, in From Miras to Planetary Nebulae. Which Path to Stellar Evolution?, ed. Mennessier, M.O., 16 
 
     \bibitem{hofner}
     Höfner, S., Olofsson, H. 2018, Mass loss of stars on the asymptotic giant branch, Astron. Astrophys. Rev., 26:1, 92
@@ -221,7 +236,7 @@ http://www-star.st-and.ac.uk/~pw31/AGB_popular.html
     Lamers, H.J.G.L.M., Cassinelli, J.P. 1997, Introduction to Stellar Winds (Cambridge University Press). 
 
     \bibitem{liljegren}
-    Liljegren, S. et al. 2017, Pulsation-Induced Atmospheric Dynamics in M-Type AGB Stars, A\&A 606, A6 
+    Liljegren, S. et al. 2017, Pulsation-Induced Atmospheric Dynamics in M-Type AGB Stars, Astron. Astrophys., 606, A6 
 
     %``Wind-driving in asymptotic giant branch (AGB) stars is commonly attributed to a two-step process. First, matter in the stellar atmosphere is levitated by shock waves, induced by stellar pulsation, and second, this matter is accelerated by radiation pressure on dust, resulting in a wind."
 
@@ -234,11 +249,17 @@ http://www-star.st-and.ac.uk/~pw31/AGB_popular.html
     \bibitem{iben}
     Iben, I., Renzini, A. 1983, Asymptotic giant branch evolution and beyond, Annu. Rev. Astron. Astrophys., 21, 271
 
+    \bibitem{ragland}
+    Ragland, S. et al. 2006, First Surface-resolved Results with the Infrared Optical Telescope Array Imaging Interferometer: Detection of Asymmetries in Asymptotic Giant Branch Stars, ApJ, 652, 650
+
+    % In conclusion, we carried out a survey of AGB stars with the IOTA 3-telescope imaging interferometer at near-infrared wavelengths, searching for asymmetry in their flux distributions. We find that 29% of our sample show asymmetry. If we restrict the sample to only well resolved targets, then 75% of AGB stars, 100% of oxygen-rich Mira stars show asymmetry from our observations. On this basis, we hypothesize that all Mira stars might show detectable asymmetry if observed with adequate spatial resolution.
+
+
     \bibitem{reimers}
     Reimers, D. 1975, Circumstellar absorption lines and mass loss from red giants, Memoires of the Societe Royale des Sciences de Liege, 8, 369
     
     \bibitem{schoenberner}
-    Schönberner, D., Blöcker, T. 1993, Evolution on the AGB and beyond, ASPCS, 45, 337
+    Schönberner, D., Blöcker, T. 1993, Evolution on the AGB and beyond, ASP Conf. Ser., 45, 337
 
     %Nobody knows what's going on. 
 
@@ -254,6 +275,23 @@ http://www-star.st-and.ac.uk/~pw31/AGB_popular.html
     %``Stellar pulsation may play a key role: it is closely associated with evolutionary phases where substantial mass loss occurs, and there are good physical reasons to expect pulsation to cause, or at least greatly to enhance, mass loss."
 
     %``Prodigious mass loss must occur before or during the ascent of the asymptotic giant branch, because white dwarf stars, with masses typically of 0.6-1.0 $M_\odot$, are formed from progenitors with masses up to 5 or 6 $M_\dot$, or more$\ldots$ This has a natural explanation, supported by observed mass-loss rates, in terms of rapid pulsation-induced mass loss during the brief but very common Mira stage of evolution at the tip of the asymptotic giant branch." 
+
+    \bibitem{woitke}
+    Woitke, P. 2006, 2D models for dust-driven AGB star winds, Astron. Astrophys., 452.2, 537
+    
+    %"spontaneous symmetry breaking occurs in these winds due to action of various instabilities"
+    
+    %caused by:
+
+    %"spatially restricted dust formation events lead to the production of incomplete dust shells,"
+
+    %"Further away from the star, flow instabilities (e. g. Rayleigh-Taylor) have time to modify and fragment the outward moving dust arcs and shells, producing numerous small-scale clumps in the outward moving dust shells and arcs."
+
+        %rayleigh taylor instability "fingers" seen in crab nebula 
+
+    %"dust structures are accelerated outward by radiation pressure, expanding radially and tangentially like mushroom clouds, while dust-poor matter is falling back towards the star at other places. A highly dynamical and turbulent dust formation zone is created in this way, which again leads to inhomogeneous dust production."
+
+    %\fig{dust_condensation}
 
     \bibitem{wood}
     Vassiliadis, E., Wood, P.R. 1993, Evolution of Low- and Intermediate-Mass Stars to the End of the Asymptotic Giant Branch with Mass Loss, ApJ, 413, 641

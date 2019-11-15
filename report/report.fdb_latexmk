@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1573511455 "report.tex" "report.pdf" "report" 1573511455
-  "/dev/null" 1573511432 0 d41d8cd98f00b204e9800998ecf8427e ""
+["pdflatex"] 1573776745 "report.tex" "report.pdf" "report" 1573776745
+  "/dev/null" 1573776712 0 d41d8cd98f00b204e9800998ecf8427e ""
   "/usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy8.tfm" 1246382020 1120 200be8b775682cdf80acad4be5ef57e4 ""
@@ -108,11 +108,12 @@
   "/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1557342064 3277517 23507ed665b4dd9046f0f2a94bbef2be ""
   "/usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1557342086 4259635 562fc36ec496993777a6c428d8bfb811 ""
   "/usr/local/texlive/2019/texmf.cnf" 1557341546 577 d150fef99ac436ad1156e86b0892f6ef ""
+  "figures/dust_condensation.png" 1573675027 1027582 5303272b28c56833cfc06dde82e22526 ""
   "figures/period_luminosity.png" 1573504905 171603 7a8ddde897c8ee2a984387aa76699d57 ""
   "figures/pulsation_massloss.png" 1573505443 257299 612e167924fd29b391d5ddf4063f7175 ""
-  "report.aux" 1573511211 1382 72ad228bcb89980d07c22a4ee90f1b13 "pdflatex"
-  "report.tex" 1573511454 14176 0ca6340da489c3b3f787db3fd962542a ""
+  "report.aux" 1573768468 1599 610bfe410f2132fac594e1c4d21513cb "pdflatex"
+  "report.tex" 1573776745 18269 4c752a70218754692900acbf0cc39c23 ""
   (generated)
-  "report.aux"
-  "report.log"
   "report.pdf"
+  "report.log"
+  "report.aux"

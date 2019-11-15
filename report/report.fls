@@ -139,7 +139,6 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
@@ -173,11 +172,15 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/euler/eurm10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/euler/eurm10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/euler/eurm7.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 OUTPUT report.pdf
 INPUT /usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT ./figures/pulsation_massloss.png
 INPUT ./figures/pulsation_massloss.png
 INPUT ./figures/pulsation_massloss.png
+INPUT ./figures/dust_condensation.png
+INPUT ./figures/dust_condensation.png
+INPUT ./figures/dust_condensation.png
 INPUT ./figures/period_luminosity.png
 INPUT ./figures/period_luminosity.png
 INPUT ./figures/period_luminosity.png
