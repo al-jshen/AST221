@@ -56,7 +56,7 @@ Fadeyev, Y.~A. 2017, Astronomy Letters, 43, 602–613,
 
 \bibitem[{{Kwok}(2000)}]{kwok2000}
 {Kwok}, S. 2000, The Origin and Evolution of Planetary Nebulae (Cambridge
-  University Press)
+  University Press), \dodoi{10.1017/CBO9780511529504}
 
 \bibitem[{{Kwok} {et~al.}(1978){Kwok}, {Purton}, \& {Fitzgerald}}]{kwok1978}
 {Kwok}, S., {Purton}, C.~R., \& {Fitzgerald}, P.~M. 1978, \apjl, 219, L125,
@@ -64,7 +64,7 @@ Fadeyev, Y.~A. 2017, Astronomy Letters, 43, 602–613,
 
 \bibitem[{{Lamers} \& {Cassinelli}(1997)}]{lamers}
 {Lamers}, H. J. G. L.~M., \& {Cassinelli}, J.~P. 1997, Introduction to Stellar
-  Winds (Cambridge University Press)
+  Winds (Cambridge University Press), \dodoi{10.1023/A:1001827020719}
 
 \bibitem[{Liljegren {et~al.}(2017)Liljegren, Höfner, Eriksson, \&
   Nowotny}]{liljegren}
@@ -84,7 +84,8 @@ Moriya, T.~J. 2014, On the 'snow-plow' phase of supernovae interacting with
 \newblock \doarXiv{1402.2519}
 
 \bibitem[{{Pottasch}(1984)}]{pottasch}
-{Pottasch}, S. 1984, Planetary Nebulae (Cambridge University Press)
+{Pottasch}, S. 1984, Planetary Nebulae (Cambridge University Press),
+  \dodoi{10.1007/978-94-010-0320-9_40}
 
 \bibitem[{{Prialnik}(2000)}]{prialnik}
 {Prialnik}, D. 2000, An Introduction to the Theory of Stellar Structure and

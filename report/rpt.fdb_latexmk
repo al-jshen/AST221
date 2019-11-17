@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex rpt"] 1573956534 "rpt.aux" "rpt.bbl" "rpt" 1573956580
+["bibtex rpt"] 1573962205 "rpt.aux" "rpt.bbl" "rpt" 1573962205
   "/usr/local/texlive/2019/texmf-dist/bibtex/bst/aastex/aasjournal.bst" 1526160150 35723 a1b253e30167cddf8124718a3c25d4dd ""
-  "rpt.aux" 1573956561 4515 5f1a2a8149fd122a99bc949fd0c0e524 "pdflatex"
-  "rptNotes.bib" 1573953820 21398 e55a24ebb86959b76859ac4e6a78a4cd "pdflatex"
+  "rpt.aux" 1573962122 4515 2c34fd9e697b60b370e0e1258ecfe4c1 "pdflatex"
+  "rptNotes.bib" 1573962204 21515 a5cb4c759becb01304da5f78fc19446c ""
   (generated)
-  "rpt.blg"
   "rpt.bbl"
-["pdflatex"] 1573956580 "rpt.tex" "rpt.pdf" "rpt" 1573956580
-  "/dev/null" 1573956561 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "rpt.blg"
+["pdflatex"] 1573962205 "rpt.tex" "rpt.pdf" "rpt" 1573962205
+  "/dev/null" 1573962171 0 d41d8cd98f00b204e9800998ecf8427e ""
   "/usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/helvetic/phvr.tfm" 1136768653 2504 ba6584b616b92101c768b6c4ffb32dd0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -33,6 +33,7 @@
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm" 1136768653 1116 25a7bf822c58caf309a702ef79f4afbb ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmti10.tfm" 1136768653 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
+  "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmti8.tfm" 1136768653 1504 1747189e0441d1c18f3ea56fafc1c480 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/latex-fonts/lasy10.tfm" 1136768653 520 82a3d37183f34b6eb363a161dfc002c2 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/latex-fonts/lasy5.tfm" 1136768653 520 d082ac03a1087bc1ec2a06e24a9f68c0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/latex-fonts/lasy6.tfm" 1136768653 520 4889cce2180234b97cad636b6039c722 ""
@@ -55,6 +56,7 @@
   "/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1248133631 32716 08e384dc442464e7285e891af9f45947 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1248133631 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
   "/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1248133631 37944 359e864bd06cde3b1cf57bb20757fb06 ""
+  "/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb" 1248133631 35660 fb24af7afbadb71801619f1415838111 ""
   "/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2019/texmf-dist/tex/generic/epsf/epsf.sty" 1298075956 27123 4572e7b856182a1e6e9df1c7cc21de80 ""
   "/usr/local/texlive/2019/texmf-dist/tex/generic/ifxetex/ifxetex.sty" 1284331290 1458 43ab4710dc82f3edeabecd0d099626b2 ""
@@ -126,12 +128,12 @@
   "figures/dust_condensation.png" 1573675027 1027582 5303272b28c56833cfc06dde82e22526 ""
   "figures/period_luminosity.png" 1573504905 171603 7a8ddde897c8ee2a984387aa76699d57 ""
   "figures/pulsation_massloss.png" 1573505443 257299 612e167924fd29b391d5ddf4063f7175 ""
-  "rpt.aux" 1573956561 4515 5f1a2a8149fd122a99bc949fd0c0e524 "pdflatex"
-  "rpt.bbl" 1573956534 5011 bef42cfde7658fa2b50c3a71ca6c1b14 "bibtex rpt"
-  "rpt.out" 1573956561 354 936015f61177d1e46b525f9ac03d51a7 "pdflatex"
-  "rpt.tex" 1573956579 15987 ecac72811a07331ac0da798192f85c54 ""
+  "rpt.aux" 1573962122 4515 2c34fd9e697b60b370e0e1258ecfe4c1 "pdflatex"
+  "rpt.bbl" 1573962205 5118 0b353fd7f2710ad51550d06d20149607 "bibtex rpt"
+  "rpt.out" 1573962122 354 936015f61177d1e46b525f9ac03d51a7 "pdflatex"
+  "rpt.tex" 1573961859 16008 85a2bb69f91756f8b594c1ff930ac7ec ""
   (generated)
-  "rpt.pdf"
-  "rpt.aux"
-  "rpt.log"
   "rpt.out"
+  "rpt.log"
+  "rpt.aux"
+  "rpt.pdf"
