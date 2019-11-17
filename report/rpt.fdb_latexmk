@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex rpt"] 1573954689 "rpt.aux" "rpt.bbl" "rpt" 1573954689
+["bibtex rpt"] 1573956534 "rpt.aux" "rpt.bbl" "rpt" 1573956580
   "/usr/local/texlive/2019/texmf-dist/bibtex/bst/aastex/aasjournal.bst" 1526160150 35723 a1b253e30167cddf8124718a3c25d4dd ""
-  "rpt.aux" 1573954682 4515 b8a08d743f834593ab81925a0fa3c5e4 "pdflatex"
+  "rpt.aux" 1573956561 4515 5f1a2a8149fd122a99bc949fd0c0e524 "pdflatex"
   "rptNotes.bib" 1573953820 21398 e55a24ebb86959b76859ac4e6a78a4cd "pdflatex"
   (generated)
   "rpt.blg"
   "rpt.bbl"
-["pdflatex"] 1573954689 "rpt.tex" "rpt.pdf" "rpt" 1573954689
-  "/dev/null" 1573954671 0 d41d8cd98f00b204e9800998ecf8427e ""
+["pdflatex"] 1573956580 "rpt.tex" "rpt.pdf" "rpt" 1573956580
+  "/dev/null" 1573956561 0 d41d8cd98f00b204e9800998ecf8427e ""
   "/usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/helvetic/phvr.tfm" 1136768653 2504 ba6584b616b92101c768b6c4ffb32dd0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -126,12 +126,12 @@
   "figures/dust_condensation.png" 1573675027 1027582 5303272b28c56833cfc06dde82e22526 ""
   "figures/period_luminosity.png" 1573504905 171603 7a8ddde897c8ee2a984387aa76699d57 ""
   "figures/pulsation_massloss.png" 1573505443 257299 612e167924fd29b391d5ddf4063f7175 ""
-  "rpt.aux" 1573954682 4515 b8a08d743f834593ab81925a0fa3c5e4 "pdflatex"
-  "rpt.bbl" 1573954689 5011 bef42cfde7658fa2b50c3a71ca6c1b14 "bibtex rpt"
-  "rpt.out" 1573954682 354 936015f61177d1e46b525f9ac03d51a7 "pdflatex"
-  "rpt.tex" 1573954687 15326 831d9fd404a9ade8978af4033bf18315 ""
+  "rpt.aux" 1573956561 4515 5f1a2a8149fd122a99bc949fd0c0e524 "pdflatex"
+  "rpt.bbl" 1573956534 5011 bef42cfde7658fa2b50c3a71ca6c1b14 "bibtex rpt"
+  "rpt.out" 1573956561 354 936015f61177d1e46b525f9ac03d51a7 "pdflatex"
+  "rpt.tex" 1573956579 15987 ecac72811a07331ac0da798192f85c54 ""
   (generated)
-  "rpt.out"
+  "rpt.pdf"
   "rpt.aux"
   "rpt.log"
-  "rpt.pdf"
+  "rpt.out"
