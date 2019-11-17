@@ -1,0 +1,125 @@
+\begin{thebibliography}{}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\url}[1]{\href{#1}{#1}}
+\providecommand{\dodoi}[1]{doi:~\href{http://doi.org/#1}{\nolinkurl{#1}}}
+\providecommand{\doeprint}[1]{\href{http://ascl.net/#1}{\nolinkurl{http://ascl.net/#1}}}
+\providecommand{\doarXiv}[1]{\href{https://arxiv.org/abs/#1}{\nolinkurl{https://arxiv.org/abs/#1}}}
+
+\bibitem[{Bedijn(1986)}]{bedijn}
+Bedijn, P.~J. 1986, in Light on Dark Matter, ed. F.~P. Israel (Dordrecht:
+  Springer Netherlands), 119--126
+
+\bibitem[{{Bisnovatyi-Kogan}(2011)}]{kogan}
+{Bisnovatyi-Kogan}, G.~S. 2011, Stellar Physics (Springer-Verlag Berlin
+  Heidelberg), \dodoi{10.1007/978-3-642-14734-0}
+
+\bibitem[{Bl{\"o}cker(2001)}]{blocker}
+Bl{\"o}cker, T. 2001, Astrophysics and Space Science, 275, 1,
+  \dodoi{10.1023/A:1002777931450}
+
+\bibitem[{{Bobrowsky} {et~al.}(1998){Bobrowsky}, {Sahu}, {Parthasarathy}, \&
+  {Garc{\'\i}a-Lario}}]{bobrowsky}
+{Bobrowsky}, M., {Sahu}, K.~C., {Parthasarathy}, M., \& {Garc{\'\i}a-Lario}, P.
+  1998, \nat, 392, 469, \dodoi{10.1038/33092}
+
+\bibitem[{{Cohen} {et~al.}(1975){Cohen}, {Anderson}, {Cowley}, {Coyne},
+  {Fawley}, {Gull}, {Harlan}, {Herbig}, {Holden}, {Hudson}, {Jakoubek},
+  {Johnson}, {Merrill}, {Schiffer}, {Soifer}, \& {Zuckerman}}]{cohen}
+{Cohen}, M., {Anderson}, C.~M., {Cowley}, A., {et~al.} 1975, \apj, 196, 179,
+  \dodoi{10.1086/153403}
+
+\bibitem[{{De Marco}(2014)}]{demarco}
+{De Marco}, O. 2014, in Asymmetrical Planetary Nebulae VI Conference, 122
+
+\bibitem[{Fadeyev(2017)}]{fadeyev}
+Fadeyev, Y.~A. 2017, Astronomy Letters, 43, 602–613,
+  \dodoi{10.1134/s1063773717080059}
+
+\bibitem[{{Gilman}(1972)}]{gilman}
+{Gilman}, R.~C. 1972, \apj, 178, 423, \dodoi{10.1086/151800}
+
+\bibitem[{{Glass} \& {Evans}(1981)}]{glass}
+{Glass}, I.~S., \& {Evans}, T.~L. 1981, \nat, 291, 303,
+  \dodoi{10.1038/291303a0}
+
+\bibitem[{{Habing}(1990)}]{habing}
+{Habing}, H.~J. 1990, in From Miras to Planetary Nebulae: Which Path for
+  Stellar Evolution?, ed. M.~O. {Mennessier} \& A.~{Omont}, 16
+
+\bibitem[{{H{\"o}fner} \& {Olofsson}(2018)}]{hofner}
+{H{\"o}fner}, S., \& {Olofsson}, H. 2018, \aapr, 26, 1,
+  \dodoi{10.1007/s00159-017-0106-5}
+
+\bibitem[{{Iben} \& {Renzini}(1983)}]{iben}
+{Iben}, I., J., \& {Renzini}, A. 1983, \araa, 21, 271,
+  \dodoi{10.1146/annurev.aa.21.090183.001415}
+
+\bibitem[{{Kwok}(2000)}]{kwok2000}
+{Kwok}, S. 2000, The Origin and Evolution of Planetary Nebulae (Cambridge
+  University Press)
+
+\bibitem[{{Kwok} {et~al.}(1978){Kwok}, {Purton}, \& {Fitzgerald}}]{kwok1978}
+{Kwok}, S., {Purton}, C.~R., \& {Fitzgerald}, P.~M. 1978, \apjl, 219, L125,
+  \dodoi{10.1086/182621}
+
+\bibitem[{{Lamers} \& {Cassinelli}(1997)}]{lamers}
+{Lamers}, H. J. G. L.~M., \& {Cassinelli}, J.~P. 1997, Introduction to Stellar
+  Winds (Cambridge University Press)
+
+\bibitem[{Liljegren {et~al.}(2017)Liljegren, Höfner, Eriksson, \&
+  Nowotny}]{liljegren}
+Liljegren, S., Höfner, S., Eriksson, K., \& Nowotny, W. 2017, Astronomy &
+  Astrophysics, 606, A6, \dodoi{10.1051/0004-6361/201731137}
+
+\bibitem[{{McCray} \& {Kafatos}(1987)}]{mccray}
+{McCray}, R., \& {Kafatos}, M. 1987, \apj, 317, 190, \dodoi{10.1086/165267}
+
+\bibitem[{McDonald \& Zijlstra(2016)}]{mcdonald}
+McDonald, I., \& Zijlstra, A.~A. 2016, The Astrophysical Journal, 823, L38,
+  \dodoi{10.3847/2041-8205/823/2/l38}
+
+\bibitem[{Moriya(2014)}]{moriya}
+Moriya, T.~J. 2014, On the 'snow-plow' phase of supernovae interacting with
+  dense circumstellar media.
+\newblock \doarXiv{1402.2519}
+
+\bibitem[{{Pottasch}(1984)}]{pottasch}
+{Pottasch}, S. 1984, Planetary Nebulae (Cambridge University Press)
+
+\bibitem[{{Prialnik}(2000)}]{prialnik}
+{Prialnik}, D. 2000, An Introduction to the Theory of Stellar Structure and
+  Evolution (Cambridge University Press)
+
+\bibitem[{Ragland {et~al.}(2006)Ragland, Traub, Berger, Danchi, Monnier,
+  Willson, Carleton, Lacasse, Millan-Gabet, Pedretti, Schloerb, Cotton, Townes,
+  Brewer, Haguenauer, Kern, Labeye, Malbet, Malin, Pearlman, Perraut, Souccar,
+  \& Wallace}]{ragland}
+Ragland, S., Traub, W.~A., Berger, J.-P., {et~al.} 2006, The Astrophysical
+  Journal, 652, 650, \dodoi{10.1086/507453}
+
+\bibitem[{{Reimers}(1975)}]{reimers}
+{Reimers}, D. 1975, Memoires of the Societe Royale des Sciences de Liege, 8,
+  369
+
+\bibitem[{Schröder \& Cuntz(2005)}]{schroeder}
+Schröder, K.-P., \& Cuntz, M. 2005, The Astrophysical Journal, 630, L73–L76,
+  \dodoi{10.1086/491579}
+
+\bibitem[{{Soker}(1997)}]{soker1997}
+{Soker}, N. 1997, \apjs, 112, 487, \dodoi{10.1086/313040}
+
+\bibitem[{Soker(1998)}]{soker1998}
+Soker, N. 1998, The Astrophysical Journal, 496, 833, \dodoi{10.1086/305407}
+
+\bibitem[{{Vassiliadis} \& {Wood}(1993)}]{vassiliadis}
+{Vassiliadis}, E., \& {Wood}, P.~R. 1993, \apj, 413, 641,
+  \dodoi{10.1086/173033}
+
+\bibitem[{Willson \& Bowen(1984)}]{willson}
+Willson, L.~A., \& Bowen, G.~H. 1984, Nature, 312, 429,
+  \dodoi{10.1038/312429a0}
+
+\bibitem[{{Woitke}(2006)}]{woitke}
+{Woitke}, P. 2006, \aap, 452, 537, \dodoi{10.1051/0004-6361:20054202}
+
+\end{thebibliography}

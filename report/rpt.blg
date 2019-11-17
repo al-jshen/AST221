@@ -1,0 +1,47 @@
+This is BibTeX, Version 0.99d (TeX Live 2019)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: rpt.aux
+The style file: aasjournal.bst
+Database file #1: rptNotes.bib
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+You've used 29 entries,
+            3166 wiz_defined-function locations,
+            867 strings with 9631 characters,
+and the built_in function-call counts, 11376 in all, are:
+= -- 963
+> -- 645
+< -- 24
++ -- 211
+- -- 205
+* -- 886
+:= -- 2057
+add.period$ -- 30
+call.type$ -- 29
+change.case$ -- 133
+chr.to.int$ -- 29
+cite$ -- 29
+duplicate$ -- 487
+empty$ -- 870
+format.name$ -- 260
+if$ -- 2371
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 25
+newline$ -- 96
+num.names$ -- 118
+pop$ -- 158
+preamble$ -- 1
+purify$ -- 133
+quote$ -- 0
+skip$ -- 451
+stack$ -- 0
+substring$ -- 469
+swap$ -- 18
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 246
+warning$ -- 0
+while$ -- 112
+width$ -- 0
+write$ -- 319
