@@ -11,7 +11,7 @@
 \graphicspath{{./figures/}}
 \bibliographystyle{aasjournal}
 
-\setstretch{1.185}
+%\setstretch{1.125}
 \begin{document}
 
 \author{Jeff Shen}
@@ -25,36 +25,35 @@ Mass Loss Mechanisms of Late-Stage AGB Stars}
 %%%%%%%%%%%%%%%%%%%%%%%% Introduction
 \section{Introduction} \label{sec:intro}
 
-The asymptotic giant branch is a region on the HR diagram populated by low- to intermediate-mass stars late in their lives. Stars in this region range from $0.6-10~M_\odot$. However, knowing that stars in this mass range eventually become white dwarfs, and that white dwarfs have a maximum (stable) mass of $1.4 M_\odot$ (Chandrasekhar limit), it is apparent that these stars must have lost the majority of their mass—up to several solar masses—at some point in their evolution \cite{willson}. A natural question to ask would be how such stars shed their mass. 
+The asymptotic giant branch (AGB) is a region on the Hertzsprung-Russell diagram populated by low- to intermediate-mass stars late in their lives. Stars in this region range from $0.6-10~M_\odot$. However, knowing that stars in this mass range eventually become white dwarfs, and that white dwarfs have a maximum (stable) mass of $1.4 M_\odot$ (Chandrasekhar limit), it is apparent that these stars must have lost the majority of their mass—up to several solar masses—at some point in their evolution \cite{willson}. A natural question to ask would be how such stars shed their mass. 
 
-Mass loss is of critical importance in the discussion of the formation of planetary nebulae. MS stars lose most of their mass as they evolve, and the majority of that mass loss takes place on the AGB track. This lost mass is partially composed of gases which are eventually responsible for the planetary nebulae that we see—a planetary nebula (abbreviated PN or plural PNe) is an interstellar cloud composed of ionized gases ejected from a low- to intermediate-mass star near the end of its stellar lifetime. However, not all gases appear as PNe—the vibrant colours associated with PNe are caused by ionizing ultraviolet radiation from the central star (CSPN). For the glow to be visible, the CSPN must have a temperature of at least $30,000~{\rm K}$, and the density in the cloud should be be upwards of 100 particles per ${\rm cm^{3}}$ \citep{prialnik}.
+Mass loss is of critical importance in the discussion of the formation of planetary nebulae. Main sequence stars lose most of their mass as they evolve, and the majority of that mass loss takes place on the AGB track. This lost mass is partially composed of gases which are eventually responsible for the planetary nebulae that we see—a planetary nebula (abbreviated PN or plural PNe) is an interstellar cloud composed of ionized gases ejected from a low- to intermediate-mass star near the end of its stellar lifetime. However, not all gases appear as PNe—the vibrant colours associated with PNe are caused by ionizing ultraviolet radiation from the central star (CSPN). For the glow to be visible, the CSPN must have a temperature of at least $30,000~{\rm K}$, and the density in the cloud should be be upwards of 100 particles per ${\rm cm^{3}}$ \citep{prialnik}.
 
 This paper aims to explore the transition of AGB stars as they shed mass to form planetary nebulae, as well as the mechanisms that drive the transition. Despite the fact that the physics behind some of these mechanisms is not well understood quantitatively \citep{blocker}, an attempt will be made to present theories on the formation of PNe.
 
-\vfill \null
-\columnbreak
+%\vfill \null
+%\columnbreak
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Stellar Winds
 \section{Stellar Winds} \label{sec:winds}
 
-Stellar winds are outflows of gas which cause the ejection of material in the stellar atmosphere into what is called a \textit{circumstellar envelope (CSE)}. In order for these gases to be ejected from the star such that they are no longer gravitationally bound to the (core of the) star, they must be accelerated past the escape velocity of the star. Fortunately for late-stage AGB stars, ``typical stellar radii [are] of several hundred solar radii. In combination with$\ldots$ masses well below 8 $M_\odot$, the resulting surface gravities are typically 4–5 orders of magnitude below that of a Sun-like star" \citep{hofner}. The low surface gravity means that material is much more easily ejected from late-stage AGB stars than for Sun-like stars, or other stars earlier in their evolutionary lifetimes. The dynamics of stellar winds are complex and varied—there are coronal winds, sound-driven winds, dust-driven winds, magnetic rotating winds, Alfv\'en wave driven winds, line driven winds, etc. \citep{lamers}
+Stellar winds are outflows of gas which cause the ejection of material in the stellar atmosphere into what is called a \textit{circumstellar envelope (CSE)}. In order for these gases to be ejected from the star such that they are no longer gravitationally bound to the (core of the) star, they must be accelerated past the escape velocity of the star. For late-stage AGB stars, which typically have radii several hundred times that of the sun, but are not significantly larger in mass \citep{hofner}. Given the relation $g \propto \frac{M}{R^2}$, the lower surface gravity of AGB stars means that material is much more easily ejected relative to stars earlier in their evolutionary lifetimes. The dynamics of stellar winds are complex and varied—there are coronal winds, sound-driven winds, dust-driven winds, magnetic rotating winds, Alfv\'en wave driven winds, line driven winds, etc. \citep{lamers}
 
-For cooler stars with temperatures in the range of $\sim 3000\,K$, stellar winds are primarily of the dust-driven variation. Radiation pressure from the star imparts its momentum onto grains of dust which are able to condense in the upper atmospheres of these stars due to the lower temperatures. When dust condenses, the opacity to radiation is increased, and thus, the radiation pressure, directed radially outwards, is able to eject this dust away from the star. In this process, the dust carries surrounding gases with it away from the star—``small grains are adequetely coupled to the gas in the sense that they efficiently communicate the momentum they absorb from the radiation field to the gas, and that momentum is effectively diffused throughout the gas" \citep{gilman}. These dust-driven winds have terminal velocities in the range of $10-30~{\rm km\,s^{-1}}$ \citep{lamers}. Because these dust grains can absorb radiation over a broad range of wavelengths, this mechanism of mass loss is also called \textit{continuum driven} winds. 
+For cooler stars with temperatures in the range of $\sim 3000\,K$, stellar winds are primarily of the dust-driven variation. Radiation pressure from the star imparts its momentum onto grains of dust which are able to condense in the upper atmospheres of these stars due to the lower temperatures. When dust condenses, the opacity to radiation is increased, and thus, the radiation pressure, directed radially outwards, is able to eject this dust away from the star. Through \textit{momentum coupling}, the dust is able to to transfer its momentum to the surrounding gases, and, in a sense, ``carry" the gases away from the star \citep{gilman}. These dust-driven winds have terminal velocities in the range of $10-30~{\rm km\,s^{-1}}$ \citep{lamers}. Because these dust grains can absorb radiation over a broad range of wavelengths, this mechanism of mass loss is also called \textit{continuum driven} winds. 
 
 
 Unfortunately, as reliable (theoretical) models are not available, many turn to the following empirical formula by \cite{reimers} for estimating mass loss due to stellar winds:
 \begin{equation*}
     \dot M = -4\times 10^{-13}\,\eta \left(\frac{L_*R_*}{M_*}\right)~{\rm M_\odot\,yr^{-1}},~{\rm \eta \sim 1}
 \end{equation*}
-where $L_*, R_*$, and $M_*$ are given in solar units. This model assumes that mass loss is proportional to luminosity (radiation pressure), and inversely proportional to surface gravity. Knowing the approximate stellar parameters of late-stage AGB stars allows us to estimate the amount of mass lost: AGB stars are typically several thousand times as luminous as the Sun, several hundred times larger in radius, and have a mass of several solar masses. This roughly gives us a mass loss rate on the order of $10^{-6}~{\rm M_\odot\,yr^{-1}}$.
+where $L_*, R_*$, and $M_*$ are stellar luminosity, radius, and mass, respectively, given in solar units. The fitting parameter $\eta$ is determined empirically. Knowing the approximate stellar parameters of late-stage AGB stars allows us to estimate the amount of mass lost: AGB stars are typically several thousand times as luminous as the Sun, several hundred times larger in radius, and have a mass of several solar masses. This roughly gives us a mass loss rate on the order of $10^{-6}~{\rm M_\odot\,yr^{-1}}$.
 
 Many other mass loss equations, such as the following one given by \cite{schroeder} as an improvement for estimating mass loss in giants with low gravity, are merely variations of Reimers' equation:
 \begin{equation*}
     \dot M = \eta\,\frac{L_*R_*}{M_*}\,\left(\frac{T_{eff}}{4000\,K}\right)^{3.5}\left(1+\frac{g_\odot}{4300g_*}\right),
 \end{equation*}
-where $L_*, R_*$, and $M_*$ are defined as before, $g_*$ and $g_\odot$ are the stellar and solar surface gravity respectively, and $\eta = 8 (\pm 1) \times 10^{-14}~{\rm M_\odot\,yr^{-1}}$. 
+where $L_*, R_*$, and $M_*$ are defined as before, $g_*$ and $g_\odot$ are the stellar and solar surface gravity respectively, and $\eta = 8 (\pm 1) \times 10^{-14}~{\rm M_\odot\,yr^{-1}}$. If we are to 
 
-
-
+\hfill\vspace{-0.2cm}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Superwinds
 \subsection{Superwinds} \label{subsec:superwinds}
 
@@ -87,10 +86,12 @@ Because pulsation causes more material to be present in the stellar atmosphere, 
 
 Of particular interest in this discussion are Mira variables, which are a particularly promising (in terms of candidacy for being the progenitors for PNe) class of stars at the top of the AGB track with pulsation periods on the order of a year. As Miras evolve, the period of their pulsation of period increases \citep{fadeyev}. This is significant for multiple reasons. 
 
-Mira variables are known to have a period-luminosity relation; using period and luminosity data from Mira variables in the Large Magellanic Cloud (LMC) as seen below,
+Empirically, Mira variables are known to have a period-luminosity relation as seen in Figure \ref{fig:period_luminosity}.
 
 \begin{figure}[ht]
     \includegraphics[width=\textwidth]{period_luminosity.png}
+    \caption{Period (logarithmic) in days plotted on the x-axis against bolometric luminosity on the y-axis. Data collected from Mira variables in the LMC by \cite{glass}.}
+    \label{fig:period_luminosity}
 \end{figure}
 
 \cite{glass} give a period-luminosity relation for Mira variables: 
@@ -100,9 +101,11 @@ Mira variables are known to have a period-luminosity relation; using period and 
 
 This period-luminosity relation implies that Miras near the end of their lifetimes have higher luminosities.\footnote{Luminosity is written such that more negative numbers indicate greater luminosity.} This increased luminosity, being linked to increased radiation pressure, implies that mass loss by stellar winds is greater (see \S \ref{sec:winds}). 
 
-Moreover, when a star begins pulsating with a period of 60 days, mass loss due to pulsation is initiated. After some time, as the pulsation period increases to $\sim 300$ days, the star transitions to the fundamental pulsation mode, and mass loss increases by a factor of $\sim 100$ \citep{mcdonald, bedijn}. This sharp increase in mass loss rate at $P\sim 300$ days is supported by empirical data from \cite{vassiliadis}, who observed the following between pulsation period and mass loss for Miras:
+Moreover, when a star begins pulsating with a period of 60 days, mass loss due to pulsation is initiated. After some time, as the pulsation period increases to $\sim 300$ days, the star transitions to the fundamental pulsation mode, and mass loss increases by a factor of $\sim 100$ \citep{mcdonald, bedijn}. This sharp increase in mass loss rate at $P\sim 300$ days is supported by empirical data from \cite{vassiliadis}, who observed that relation the between pulsation period and mass loss for Miras (and for OH/IR stars\footnote{These are a ``class of objects associated with late type giant stars that may be a later stage in the development towards the planetary nebula, either after the Mira phase or in place of it" \citep{pottasch}.}) is exponential, as seen in Figure \ref{fig:pulsation_massloss}.
 \begin{figure}[ht]
     \includegraphics[width=\textwidth]{pulsation_massloss.png}
+    \caption{Pulsation period plotted against mass loss rate in $M_\odot\,yr^{-1}$ for Mira variables (circles) and for OH/IR stars in the Galaxy (triangles) and the LMC (squares).}
+    \label{fig:pulsation_massloss}
 \end{figure}
 
 \cite{vassiliadis} give the relation 
@@ -118,15 +121,17 @@ for stars with $M\leq 2.5M\odot$, and
 
 for stars with $M\geq 2.5M\odot$. From these equations, it can be seen that there is an exponential increase in the mass loss rate towards the end of an AGB star's life. This increase by a factor of $\sim 100$ from before (we approximated the mass loss rate to be $10^{-6}~{\rm M_\odot\,yr^{-1}}$) puts the rate of mass loss at  $10^{-4}~{\rm M_\odot\,yr^{-1}}$, which happens to be approximately the mass loss rate due to superwinds \citep{iben}. 
 
-\vfill\null 
-\columnbreak
+%\vfill\null 
+ %\columnbreak
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Asymmetry
 \section{Asymmetry}\label{sec:asymmetry}
 
-The complexity of interactions between all of these physical processes means that much remains unclear. There is a lack of powerful, universal theoretical models that can be used to explain how PNe form. In particular, it is unclear what gives rise to the incredible variety of shapes of PNe. Assumptions of stellar winds (and thereby PNe) being spherically symmetric may help simplify and improve our understanding of the processes, but are known to be inaccurate. In fact, roughly $80-90\%$ of PNe are not spherical \citep{demarco, soker1997}. \cite{woitke} performed hydrodynamical simulations of dust-driven stellar winds, and concluded that ``highly dynamical and turbulent dust formation [zones]" and flow instabilities (e.g. Rayleigh-Taylor) in stellar atmospheres lead not to symmetric, but to inhomogeneous and asymmetric dust production as seen in the figure below:
+The complexity of interactions between all of these physical processes means that much remains unclear. There is a lack of powerful, universal theoretical models that can be used to explain how PNe form. In particular, it is unclear what gives rise to the incredible variety of shapes of PNe. Assumptions of stellar winds (and thereby PNe) being spherically symmetric may help simplify and improve our understanding of the processes, but are known to be inaccurate. In fact, roughly $80-90\%$ of PNe are not spherical \citep{demarco, soker1997}. \cite{woitke} performed hydrodynamical simulations of dust-driven stellar winds, and concluded that ``highly dynamical and turbulent dust formation [zones]" and flow instabilities (e.g. Rayleigh-Taylor) in stellar atmospheres lead not to symmetric, but to inhomogeneous and asymmetric dust production as seen in Figure \ref{fig:dust_condensation}.
 
 \begin{figure}[ht]
     \includegraphics[width=\textwidth]{dust_condensation.png}
+    \caption{Snapshot of a 2D non-spherically model for dust condensation for $M_* = 1M_\odot$, $L_* = 10000L_\odot$, $T_* = 2500~{\rm K}$. The solution becomes chaotic \citep{woitke}.}
+    \label{fig:dust_condensation}
 \end{figure}
 
 If we accept that Miras are the progenitors to PNe, then then this asymmetry may be explained by the asymmetry of Miras themselves. \cite{ragland} observed, using the IOTA telescope, that for well-resolved stars, ``75\% of AGB stars [and] 100\% of oxygen-rich Mira stars show asymmetry" ($n=16$).
