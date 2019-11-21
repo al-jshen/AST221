@@ -47,7 +47,7 @@ Unfortunately, as reliable (theoretical) models are not available, many turn to 
 \end{equation}
 where $\dot M$ is the rate of mass loss, and $L_*, R_*$, and $M_*$ are stellar luminosity, radius, and mass, respectively, given in solar units. The fitting parameter $\eta$ is determined empirically. Knowing the approximate stellar parameters of late-stage AGB stars allows us to estimate the amount of mass lost. AGB stars are typically several thousand times as luminous as the Sun, several hundred times larger in radius, and have a mass of several solar masses. This roughly gives us a mass loss rate on the order of $10^{-6}~{\rm M_\odot\,yr^{-1}}$.
 
-Many other mass loss equations, such as the following one given by \cite{volk} as an improvement for estimating mass loss in AGB stars, are merely variations of Reimers' equation: 
+Many other mass loss models, such as ones given by \cite{schroeder} for low-gravity stars, or the one given by Equation \ref{eq:volk}, are merely variations of Reimers' equation with additional terms to better fit empirical observations. For example, \cite{volk} give the following equation as an improvement for estimating mass loss in AGB stars:
 \begin{equation}\label{eq:volk}
     \dot M = -1.8 \times 10^{-12}\, \frac{M_*(0)}{8M_\odot}\, \left(\frac{L_*R_*}{M_*}\right)~{\rm M_\odot\,yr^{-1}},
 \end{equation}
@@ -112,16 +112,15 @@ Moreover, when a star begins pulsating with a period of 60 days, mass loss due t
     \label{fig:pulsation_massloss}
 \end{figure}
 
-\cite{vassiliadis} give the relation 
-\begin{align}\label{eq:mlpsub2.5}
-    \log \dot M~{[\rm M_\odot\,yr^{-1}]} = -11.4 + 0.0123\,P~{[\rm days]}
-\end{align}
+For period $P$ measured in days, and mass loss rate $\dot M$ measured in solar masses per year, \cite{vassiliadis} give the relation 
+\begin{equation}\label{eq:mlpsub2.5}
+    \log \dot M = -11.4 + 0.0123\,P
+\end{equation}
 
 for stars with $M\leq 2.5M\odot$, and
-\begin{align}\label{eq:mlpover2.5}
-    \log \dot M~{[\rm M_\odot\,yr^{-1}]} &= -11.4 \\
-    &+ 0.0125\,\left(P~{[\rm days]} - 100\left(\frac{M_*}{M_\odot} - 2.5\right)\right) \nonumber
-\end{align}
+\begin{equation}\label{eq:mlpover2.5}
+    \log \dot M = -11.4 + 0.0125\,\left(P - 100\left(\frac{M_*}{M_\odot} - 2.5\right)\right) 
+\end{equation}
 
 for stars with $M\geq 2.5M\odot$. From these equations, it can be seen that there is an exponential increase in the mass loss rate towards the end of an AGB star's life. 
 
