@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex rpt"] 1574179970 "rpt.aux" "rpt.bbl" "rpt" 1574179998
+["bibtex rpt"] 1574311294 "rpt.aux" "rpt.bbl" "rpt" 1574311300
   "/usr/local/texlive/2019/texmf-dist/bibtex/bst/aastex/aasjournal.bst" 1526160150 35723 a1b253e30167cddf8124718a3c25d4dd ""
-  "rpt.aux" 1574179972 4808 267f56972f9bded092b53caf19d05216 "pdflatex"
-  "rptNotes.bib" 1573962330 21515 a5cb4c759becb01304da5f78fc19446c ""
+  "rpt.aux" 1574311295 5633 ec20727d209de8eb1ee54ce5e5882b55 "pdflatex"
+  "rptNotes.bib" 1574311174 24273 503ef2f28295c291ca90d35fca1ed196 ""
   (generated)
-  "rpt.blg"
   "rpt.bbl"
-["pdflatex"] 1574179998 "rpt.tex" "rpt.pdf" "rpt" 1574179998
-  "/dev/null" 1574179978 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "rpt.blg"
+["pdflatex"] 1574311300 "rpt.tex" "rpt.pdf" "rpt" 1574311300
+  "/dev/null" 1574311292 0 d41d8cd98f00b204e9800998ecf8427e ""
   "/usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/helvetic/phvr.tfm" 1136768653 2504 ba6584b616b92101c768b6c4ffb32dd0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -133,12 +133,12 @@
   "figures/dust_condensation.png" 1573675027 1027582 5303272b28c56833cfc06dde82e22526 ""
   "figures/period_luminosity.png" 1573504905 171603 7a8ddde897c8ee2a984387aa76699d57 ""
   "figures/pulsation_massloss.png" 1573505443 257299 612e167924fd29b391d5ddf4063f7175 ""
-  "rpt.aux" 1574179972 4808 267f56972f9bded092b53caf19d05216 "pdflatex"
-  "rpt.bbl" 1574179970 5118 0b353fd7f2710ad51550d06d20149607 "bibtex rpt"
-  "rpt.out" 1574179972 354 936015f61177d1e46b525f9ac03d51a7 "pdflatex"
-  "rpt.tex" 1574179998 16726 3d0f72e27cd94e38ca04db4fb3091bef ""
+  "rpt.aux" 1574311295 5633 ec20727d209de8eb1ee54ce5e5882b55 "pdflatex"
+  "rpt.bbl" 1574311294 5879 7454c6b64b49bc02aaad62ec2c6fea05 "bibtex rpt"
+  "rpt.out" 1574311295 354 936015f61177d1e46b525f9ac03d51a7 "pdflatex"
+  "rpt.tex" 1574311300 18419 d9160f21815c90573b7943fd8dba2610 ""
   (generated)
+  "rpt.pdf"
   "rpt.out"
   "rpt.aux"
   "rpt.log"
-  "rpt.pdf"

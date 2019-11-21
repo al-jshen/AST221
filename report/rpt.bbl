@@ -102,6 +102,10 @@ Ragland, S., Traub, W.~A., Berger, J.-P., {et~al.} 2006, The Astrophysical
 {Reimers}, D. 1975, Memoires of the Societe Royale des Sciences de Liege, 8,
   369
 
+\bibitem[{{Robertson} \& {Feast}(1981)}]{robertson}
+{Robertson}, B.~S.~C., \& {Feast}, M.~W. 1981, \mnras, 196, 111,
+  \dodoi{10.1093/mnras/196.2.111}
+
 \bibitem[{Schröder \& Cuntz(2005)}]{schroeder}
 Schröder, K.-P., \& Cuntz, M. 2005, The Astrophysical Journal, 630, L73–L76,
   \dodoi{10.1086/491579}
@@ -116,11 +120,24 @@ Soker, N. 1998, The Astrophysical Journal, 496, 833, \dodoi{10.1086/305407}
 {Vassiliadis}, E., \& {Wood}, P.~R. 1993, \apj, 413, 641,
   \dodoi{10.1086/173033}
 
+\bibitem[{{Volk} \& {Kwok}(1988)}]{volk}
+{Volk}, K., \& {Kwok}, S. 1988, \apj, 331, 435, \dodoi{10.1086/166570}
+
 \bibitem[{Willson \& Bowen(1984)}]{willson}
 Willson, L.~A., \& Bowen, G.~H. 1984, Nature, 312, 429,
   \dodoi{10.1038/312429a0}
 
 \bibitem[{{Woitke}(2006)}]{woitke}
 {Woitke}, P. 2006, \aap, 452, 537, \dodoi{10.1051/0004-6361:20054202}
+
+\bibitem[{{Woodruff, H. C.} {et~al.}(2004){Woodruff, H. C.}, {Eberhardt, M.},
+  {Driebe, T.}, {Hofmann, K.-H.}, {Ohnaka, K.}, {Richichi, A.}, {Schertl, D.},
+  {Sch\"oller, M.}, {Scholz, M.}, {Weigelt, G.}, {Wittkowski, M.}, \& {Wood, P.
+  R.}}]{woodruff}
+{Woodruff, H. C.}, {Eberhardt, M.}, {Driebe, T.}, {et~al.} 2004, A\&A, 421,
+  703, \dodoi{10.1051/0004-6361:20035826}
+
+\bibitem[{{Wyatt} \& {Cahn}(1983)}]{wyatt}
+{Wyatt}, S.~P., \& {Cahn}, J.~H. 1983, \apj, 275, 225, \dodoi{10.1086/161527}
 
 \end{thebibliography}
