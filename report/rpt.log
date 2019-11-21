@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  20 NOV 2019 23:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  21 NOV 2019 00:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -885,34 +885,45 @@ Overfull \hbox (10.88353pt too wide) in paragraph at lines 81--81
  []
 
 [2]
-<./figures/period_luminosity.png, id=130, 563.10374pt x 325.215pt>
+<./figures/period_luminosity.png, id=129, 563.10374pt x 325.215pt>
 File: ./figures/period_luminosity.png Graphic file (type png)
 <use ./figures/period_luminosity.png>
-Package pdftex.def Info: ./figures/period_luminosity.png  used on input line 96
+Package pdftex.def Info: ./figures/period_luminosity.png  used on input line 95
 .
 (pdftex.def)             Requested size: 242.26653pt x 139.91911pt.
 
-Overfull \hbox (10.88353pt too wide) in paragraph at lines 106--106
+! You can't use `\vadjust' in vertical mode.
+<argument> \vadjust 
+                    {\do@output@cclv {\@add@float }}\@Esphack 
+l.98 \end{figure}
+                 
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Overfull \hbox (10.88353pt too wide) in paragraph at lines 105--105
 [][]| [] [][]| 
  []
 
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 106.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 105.
 
-Overfull \hbox (10.88353pt too wide) in paragraph at lines 108--108
+Overfull \hbox (10.88353pt too wide) in paragraph at lines 107--107
 [][]| [] [][]| 
  []
 
-<./figures/pulsation_massloss.png, id=148, 933.4875pt x 596.2275pt>
+<./figures/pulsation_massloss.png, id=147, 933.4875pt x 596.2275pt>
 File: ./figures/pulsation_massloss.png Graphic file (type png)
 <use ./figures/pulsation_massloss.png>
 Package pdftex.def Info: ./figures/pulsation_massloss.png  used on input line 1
-10.
+09.
 (pdftex.def)             Requested size: 242.26653pt x 154.73346pt.
 ! You can't use `\vadjust' in vertical mode.
 <argument> \vadjust 
                     {\do@output@cclv {\@add@float }}\@Esphack 
-l.113 \end{figure}
+l.112 \end{figure}
                   
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -924,10 +935,21 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 File: ./figures/dust_condensation.png Graphic file (type png)
 <use ./figures/dust_condensation.png>
 Package pdftex.def Info: ./figures/dust_condensation.png  used on input line 13
-8.
+3.
 (pdftex.def)             Requested size: 242.26653pt x 227.72835pt.
 
-Overfull \hbox (10.88353pt too wide) in paragraph at lines 145--145
+! You can't use `\vadjust' in vertical mode.
+<argument> \vadjust 
+                    {\do@output@cclv {\@add@float }}\@Esphack 
+l.136 \end{figure}
+                  
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Overfull \hbox (10.88353pt too wide) in paragraph at lines 140--140
 [][]| [] [][]| 
  []
 
@@ -943,18 +965,23 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ) [5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 157.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 150.
  (./rpt.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 157.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 157.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 150.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 150.
 Package rerunfilecheck Info: File `rpt.out' has not changed.
-(rerunfilecheck)             Checksum: 936015F61177D1E46B525F9AC03D51A7;354.
+(rerunfilecheck)             Checksum: 2C41E1FFFE4B9F5F2A3333E1FA0A0C18;357.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right .
+
+
  ) 
 Here is how much of TeX's memory you used:
- 20809 strings out of 492616
- 350451 string characters out of 6129482
+ 20808 strings out of 492616
+ 350445 string characters out of 6129482
  662047 words of memory out of 5000000
- 24499 multiletter control sequences out of 15000+600000
+ 24498 multiletter control sequences out of 15000+600000
  542446 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,7n,63p,1310b,463s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -997,7 +1024,7 @@ st/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2019/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2019/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2019/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on rpt.pdf (5 pages, 1500557 bytes).
+Output written on rpt.pdf (5 pages, 1500475 bytes).
 PDF statistics:
  348 PDF objects out of 1000 (max. 8388607)
  304 compressed objects within 4 object streams
