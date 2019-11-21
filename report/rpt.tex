@@ -11,7 +11,7 @@
 \graphicspath{{./figures/}}
 \bibliographystyle{aasjournal}
 
-\setstretch{1.07}
+\setstretch{1.08}
 \begin{document}
 
 \author{Jeff Shen}
@@ -91,7 +91,6 @@ Because pulsation causes more material to be present in the stellar atmosphere, 
 Of particular interest in this discussion are Mira variables, which are a particularly promising (in terms of candidacy for being the progenitors for PNe) class of stars at the top of the AGB track with pulsation periods on the order of a year. As Miras evolve, the period of their pulsation of period increases \citep{fadeyev}. This is significant for multiple reasons. 
 
 Empirically, Mira variables are known to have a positive period-luminosity relation \citep{robertson, glass} as seen in Figure \ref{fig:period_luminosity}.
-
 \begin{figure}[!ht]
     \includegraphics[width=\textwidth]{period_luminosity.png}
     \caption{Period (logarithmic) in days plotted on the x-axis against apparent bolometric magnitude on the y-axis for Mira variables in the LMC \citep{glass}.}
@@ -106,7 +105,7 @@ Empirically, Mira variables are known to have a positive period-luminosity relat
 This period-luminosity relation implies that Miras near the end of their lifetimes have higher luminosities.\footnote{Luminosity is written such that more negative numbers indicate greater luminosity.} This increased luminosity, being linked to increased radiation pressure, implies that mass loss by stellar winds is greater (see \S \ref{sec:winds}). 
 
 Moreover, when a star begins pulsating with a period of 60 days, mass loss due to pulsation is initiated. After some time, as the pulsation period increases to $\sim 300$ days, the star transitions to the fundamental pulsation mode, and mass loss increases by a factor of $\sim 100$ \citep{mcdonald, bedijn}. This sharp increase in mass loss rate at $P\sim 300$ days is supported by empirical data from \cite{vassiliadis}, who observed that relation the between pulsation period and mass loss for Miras (and for OH/IR stars\footnote{These are a ``class of objects associated with late type giant stars that may be a later stage in the development towards the planetary nebula, either after the Mira phase or in place of it" \citep{pottasch}.}) is exponential, as seen in Figure \ref{fig:pulsation_massloss}.
-\begin{figure}[ht]
+\begin{figure}[!ht]
     \includegraphics[width=\textwidth]{pulsation_massloss.png}
     \caption{Pulsation period plotted against mass loss rate in $M_\odot\,yr^{-1}$ for Mira variables (circles) and for OH/IR stars in the Galaxy (triangles) and the LMC (squares) \citep{vassiliadis}.}
     \label{fig:pulsation_massloss}
@@ -126,15 +125,11 @@ for stars with $M\geq 2.5M\odot$. From these equations, it can be seen that ther
 
 We can apply these quantitative relationships to make some estimates. Let us consider Omicron Ceti, also called Mira (the namesake/prototype for the Mira class of stars), with stellar parameters $P = 332~{\rm days}$, $M_* = 1.18M_\odot$ \citep{wyatt}, $L_* \simeq 9000 L_\odot$, and $R \simeq 370 R_\odot$ \citep{woodruff}. Using Equation \ref{eq:reimers}, a simplistic formula which disregards pulsation, we obtain a mass loss rate of $1.12\times 10^{-6}~{\rm M_\odot\,yr^{-1}}$, which is far lower than observed mass loss rates for similar stars. Taking into account pulsation-induced mass loss, we apply Equation \ref{eq:mlpsub2.5} to obtain $6.6\times 10^{-4}~{\rm M_\odot\,yr^{-1}}$, which is much closer to empirical values. Considering that we previously estimated mass loss in \S \ref{sec:winds} to be on the order of $10^{-6}~{\rm M_\odot\,yr^{-1}}$, this also aligns with the expected increase by a factor of $\sim 100$. This rate of mass loss conveniently happens to be in the approximate range of mass loss due to superwinds \citep{iben}. 
 
-
-%\vfill\null 
- %\columnbreak
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Asymmetry
 \section{Asymmetry}\label{sec:asymmetry}
 
 The complexity of interactions between all of these physical processes means that much remains unclear. There is a lack of powerful, universal theoretical models that can be used to explain how PNe form. In particular, it is unclear what gives rise to the incredible variety of shapes of PNe. Assumptions of stellar winds (and thereby PNe) being spherically symmetric may help simplify and improve our understanding of the processes, but are known to be inaccurate. In fact, roughly $80-90\%$ of PNe are not spherical \citep{demarco, soker1997}. \cite{woitke} performed hydrodynamical simulations of dust-driven stellar winds, and concluded that turbulent dust formation and flow instabilities (e.g. Rayleigh-Taylor) in stellar atmospheres lead not to symmetric, but to inhomogeneous and asymmetric dust production as seen in Figure \ref{fig:dust_condensation}.
-
-\begin{figure}[ht]
+\begin{figure}[!ht]
     \includegraphics[width=\textwidth]{dust_condensation.png}
     \caption{Snapshot of a 2D non-spherically model for dust condensation for $M_* = 1M_\odot$, $L_* = 10000L_\odot$, $T_* = 2500~{\rm K}$. The solution becomes chaotic \citep{woitke}.}
     \label{fig:dust_condensation}
@@ -144,13 +139,11 @@ If we accept that Miras are the progenitors to PNe, then then this asymmetry may
 
 One possible explanation for this observed asymmetry lies in binary star systems. The dynamic interactions between two stars of similar or different masses, as well as the physical and temporal nature of the interactions, can all play a role in the formation of PNe. For example, \cite{soker1998} postulates that bipolar nebulae (e.g. M2-9), which are characterized by twin lobes around the CSPN and account for $10-20\%$ of PNe, are formed from binary stellar systems in which the secondary diverts a significant amount of the mass lost by the AGB primary, and the systems are only in a common envelope phase very briefly. Binary systems have also been found at the center of the Stingray Nebula, the youngest known PN \citep{bobrowsky}, and at the center of the Red Rectangle, a rectangular protoplanetary nebula\footnote{A protoplanetary nebula (PPN), as noted earlier, is an object formed between the transition from AGB to PN. The radiation from the CSPN, which is at this point below the $30,000~{\rm K}$ lower bound required to ionize the gases, is scattered/reflected by the gases, causing the PPN to be visible.} \citep{cohen} However, the causes for asymmetry, and more generally, the astounding complexity and diversity of the morphology of PNe, remain far from absolute. 
 
-
-\section{Summary}\label{sec:summary}
+\section{Conclusion}\label{sec:conclusion}
 
 This paper explores the mechanisms behind the mass loss that drives the transition of a low- to intermediate-mass star from the AGB track to the formation of a planetary nebula. Stellar winds and stellar pulsation are given as the primary drivers for mass loss, and quantitative relations are discussed. In particular, mass loss induced by stellar winds are proportional to luminosity, and inversely proportional to surface gravity. Pulsation period increases as a star ages, causing mass loss to increase exponentially to rates on the order of $10^{-4}~{\rm M_\odot\,yr^{-1}}$. This culminates in a final ``superwind", which is ultimately responsible for the formation of PNe. The candidacy of Mira variables as the progenitors for PNe is discussed in the context of these mass loss mechanisms, and theories explaining the wide range of shapes of PNe are considered. 
 
-
-
+\newpage
 \nocite{*}
 \bibliography{rptNotes}
 
