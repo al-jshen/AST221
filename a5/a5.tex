@@ -1,0 +1,136 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage{fullpage}
+\usepackage[top=2cm, bottom=4.5cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd}
+\usepackage{lastpage}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{caption,cleveref,colortbl,csquotes,datatool,helvet,mathpazo,multirow,listings,pgfplots,xcolor}
+
+\hypersetup{%
+  colorlinks=true,
+  linkcolor=blue,
+  linkbordercolor={0 0 1}
+}
+
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+
+% edit these
+\newcommand\course{AST221H}
+\newcommand\Title{Assignment 5}
+\newcommand\Name{Jeff Shen} 
+\newcommand\Id{1004911526} 
+\newcommand\Date{Nov. 29, 2019}
+
+\pagestyle{fancyplain}
+\headheight 35pt
+\lhead{\Name}
+\lhead{\Name\\\Id}
+\chead{\LARGE \Title}
+\rhead{\course \\ \Date}
+\lfoot{}
+\cfoot{}
+\rfoot{\small\thepage}
+\pgfplotsset{compat=1.16}
+\headsep 1.5em
+
+\begin{document}
+
+% problem 1
+\section*{Problem 1: The greenhouse effect and global warming}
+\begin{enumerate}[label=(\alph*)]
+    \item
+    \item 
+        \begin{enumerate}[label=(\roman*)]
+            \item We can rearrange the equation to solve for $\tau$: 
+                \begin{align*}
+                    T_g^4 = T_p^4\left(\frac{3\tau}{4} + 1 - \frac{6}{12}\right) \\
+                    \implies \left(\frac{T_g}{T_p}\right)^4 = \frac{3\tau}{4} + \frac{1}{2} \\
+                    \implies \frac{3\tau}{4} = \left(\frac{T_g}{T_p}\right)^4 - \frac{1}{2} \\
+                    \implies \tau = \frac{4}{3}\left(\left(\frac{T_g}{T_p}\right)^4 - \frac{1}{2}\right) \\
+                    = \frac{4}{3}\left(\left(\frac{288}{255}\right)^4 - \frac{1}{2}\right)
+                    = 1.503
+                \end{align*}
+            \item
+            \item We can calculate the new $T_g$ using Equation 1, where $\tau$ is twice our result from (i):
+                \begin{align*}
+                    T_g &= \sqrt[4]{T_p^4\left(1+\frac{3}{4}\left(\tau - \frac{2}{3}\right)\right)} \\
+                    &= \sqrt[4]{255^4 \left(1 + \frac{3}{4}\left(2\times1.503 - \frac{2}{3}\right)\right)} \\
+                    &= 328.5.
+                \end{align*}
+                Then the rise in temperature is simply the difference in temperature: 
+                \begin{align*}
+                    \Delta T_g &= T_{g2} - T_{g1} = 328.5~{\rm K} - 288~{\rm K} = 40.5~{\rm K}. 
+                \end{align*}
+        \end{enumerate}
+\end{enumerate}
+
+% problem 2
+\section*{Problem 2: Comet impacts}
+
+\begin{enumerate}[label=(\alph*)]
+    \item We first find the mass of the comet:
+        \begin{align*}
+            M = \rho V = \frac{4}{3}\rho \pi r^3 = \frac{4}{3}\times 920~{\rm kg\,m^{-3}}\times \pi \times (4\times 10^{3}~{\rm cm})^3 = 2.46\times 10^{14}~{\rm kg}.
+        \end{align*}
+        Then, knowing that the molecular mass of water ice is $2.99\times 10^{-26}~{\rm kg}$ (approximately $18\,m_H$) and that the temperature of water ice is $273~{\rm K}$, we can calculate the kinetic energy as follows:
+        \begin{align*}
+            E_k = \frac{3}{2}Nk_BT = \frac{3}{2}\frac{M}{\overline m}k_BT = \frac{3\times 2.46\times 10^{14}~{\rm kg}}{2\times 2.99\times 10^{-26}~{\rm kg}}\times 1.38\times 10^{-23}~{\rm J\,K^{-1}} \times 273~{\rm K} = 4.65\times 10^{19}~{\rm J}.
+        \end{align*}
+    \item Equating the thermal energy of the vapourized rocks to the kinetic energy of the comet allows us to determine an expression for the mass of the rocks in terms of the kinetic energy:
+        \begin{align*}
+            E_k = \frac{3}{2}\frac{M}{\overline m}k_BT
+            \implies M = \frac{2E_k\overline{m}}{3k_BT}.
+        \end{align*}
+        Evaluating this expression, with $\overline{m} = 30\,m_H = 30\times 1.674\times 10^{-27}~{\rm kg} = 5.022\times 10^{-26}~{\rm kg}$, and $T = 3500~{\rm K}$, we can find the mass of the vapourized rocks:
+        \begin{align*}
+            M = \frac{2\times 4.65\times 10^{19}~{\rm J}\times 5.022\times 10^{-26}~{\rm kg}}{3\times 1.38\times 10^{-23}~{\rm J\,K^{-1}}\times 3500~{\rm K}} = 3.22\times 10^{13}~{\rm kg}
+        \end{align*}
+        We can use this, along with the formula for the volume of a cylinder, $V = \pi hr^2$, to find the radius of the cylinder:
+        \begin{align*}
+            V = \pi hr^2 \\
+            \implies r = \sqrt{\frac{V}{\pi h}} = \sqrt{\frac{\frac{M}{\rho}}{\pi h}} = \sqrt{\frac{\frac{3.22\times 10^{13}~{\rm kg}}{2000~{\rm kg\,m^{-3}}}}{\pi \times 10^{4}~{\rm m}}} = 715.9~{\rm m}.
+        \end{align*}
+
+    \item If we call the number of impacts on the Moon $I_M$ and on the Earth $I_E$, then we can simply use the ratio of surface areas to solve for $I_E$:
+        \begin{align*}
+            \frac{A_E}{A_M} = \frac{4\pi r_E^2}{4\pi r_M^2} = \frac{r_E^2}{r_M^2} = \frac{I_E}{I_M} \\
+            \implies I_E = \frac{r_E^2}{r_M^2}\,I_M = \frac{(6.3781\times 10^{6}~{\rm m})^2}{(1.7371\times 10^{6}~{\rm m})^2}\times 10~{\rm impacts} \simeq 135~{\rm impacts}. 
+        \end{align*}
+
+        {\huge BONUS: something about moon having no atmosphere => no winds to blow dust to cover up the craters or any historical evidence.}
+
+    \item Dividing the number of impacts by the time over which we calculated the number of impacts, we find that that mean time between impacts is
+        \begin{equation*}
+            \overline{t} = \frac{t_{tot}}{I_E} = \frac{3\times 10^{9}~{\rm years}}{134~{\rm impacts}} = 2.24\times 10^{7}~\text{years per impact} = 22.4~\text{Myrs per impact}.
+        \end{equation*}
+        {\huge the observed difference might be because earth's atmosphere provides some level of protection from foreign objects.}
+\end{enumerate}
+
+
+
+
+% problem 3
+\section*{Problem 3: Rayleigh scattering}
+
+\begin{enumerate}[label=(\alph*)]
+\end{enumerate}
+
+% problem 4
+\section*{Problem 4: Temperatures on Earth} 
+
+\begin{enumerate}[label=(\alph*)]
+    \item We can again use the formula relating kinetic energy to temperature, where temperature here is {\huge what temperature from problem 1? 255? 288? something else?}
+        \begin{align*}
+            E_k = \frac{3M}{2\overline{m}}k_bT = \frac{3\times 5\times 10^{18}~{\rm kg}}{2\times 29\times 1.674\times 10^{-27}~{\rm kg}} \times 1.38\times 10^{-23}~{\rm J\,K^{-1}} \times T
+        \end{align*}
+\end{enumerate}
+
+
+\end{document}
