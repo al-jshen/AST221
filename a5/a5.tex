@@ -21,6 +21,8 @@
 
 \setlength{\parindent}{0.0in}
 \setlength{\parskip}{0.05in}
+\setlength{\footnotesep}{1.2\baselineskip}
+
 
 % edit these
 \newcommand\course{AST221H}
@@ -126,8 +128,6 @@
 \end{enumerate}
 
 
-
-
 % problem 3
 \section*{Problem 3: Rayleigh scattering}
 
@@ -155,15 +155,7 @@ where $N$ is the number of collisions. Given that a red photon has double the wa
             E_k = \frac{3M}{2\overline{m}}k_bT = \frac{3\times 5\times 10^{18}~{\rm kg}}{2\times 29\times 1.674\times 10^{-27}~{\rm kg}} \times 1.38\times 10^{-23}~{\rm J\,K^{-1}} \times 255~{\rm K} = 5.44\times 10^{23}~{\rm J}.
         \end{align*}
 
-    \item The luminosity is related to the temperature by the Stefan-Boltzmann law: $L = 4\pi R^2 \sigma T^4$. If we evaluate this, varying the radius from the surface of the Earth to the outer atmosphere (which we take to be the K\'arm\'an line), then the luminosity of the atmosphere is 
-        \begin{align*}
-            L &= 4 \pi R^2 \sigma T^4~\text{, for $R$ from $R_\oplus$ to $R_\oplus + 10^5~{\rm m}$} \\
-            &= 4\pi \sigma T^4 \left(R^2\Big|_{R_\oplus}^{R_\oplus + 10^5}\right) \\
-            &= 4\pi \times 5.67\times 10^{-8}~{\rm W\,m^{-2}\,K^{-4}} \times (255~{\rm K})^4 \times \left((6.371\times 10^{6}~{\rm m} + 10^{5}~{\rm m})^2 - (6.371\times 10^{6}~{\rm m})^2\right) \\
-            &= 3.87\times 10^{15}~{\rm W}
-        \end{align*}
-
-        We can calculate the luminosity using the Stefan-Boltzmann law, where $R$ is the radius of the Earth: 
+    \item \footnote{For this question, I instinctively would have done it by evaluating the Stefan-Boltzmann equation, varying the radius from the surface of the Earth to the outer atmosphere (which I took to be the K\'arm\'an line). Numerically it would have been something like $L = 4\pi \sigma T^4 (R_1^2 - R_2^2)$, where $R_1$ is about the radius of the Earth plus $100~{\rm km}$ or so, and $R_2$ is the radius of the Earth. This gave me $\sim 3.87\times 10^{15}~{\rm W}$ which would have been way off for part c (the thermal time would be something like $4.5~{\rm years}$). Would it be possible to get an explanation for why doing it this way is incorrect (if it is)? Thanks.} We can calculate the luminosity using the Stefan-Boltzmann law, where $R$ is approximated by the radius of the Earth: 
         \begin{equation*}
             L &= 4\pi R_\oplus^2 \sigma T^4 \\
             &= 4\pi \times (6.371\times 10^{6}~{\rm m})^2 \times 5.67\times 10^{-8}~{\rm W\,m^{-2}\,K^{-4}}\times (255~{\rm K})^4 \\
