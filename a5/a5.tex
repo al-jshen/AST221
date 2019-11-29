@@ -10,6 +10,7 @@
 \usepackage{listings}
 \usepackage{hyperref}
 \usepackage{booktabs}
+\usepackage{cancel}
 \usepackage{caption,cleveref,colortbl,csquotes,datatool,helvet,mathpazo,multirow,listings,pgfplots,xcolor}
 
 \hypersetup{%
@@ -38,32 +39,43 @@
 \cfoot{}
 \rfoot{\small\thepage}
 \pgfplotsset{compat=1.16}
-\headsep 1.5em
+\headsep 1.2em
 
 \begin{document}
 
 % problem 1
 \section*{Problem 1: The greenhouse effect and global warming}
 \begin{enumerate}[label=(\alph*)]
-    \item
+    \item If the atmosphere emits energy both towards the ground and into space at a rate of $L_E = 4\pi R^2 \sigma T_p^4$, then the total rate of emission is $2L_E$. By conservation of energy, we can equate this to the energy it receives, $L_R = 4\pi R^2 \sigma T_g$, to find that 
+        \begin{equation*}
+            L_R &= 2L_E \\ \quad \implies \quad
+            \bcancel{4\pi R^2 \sigma} T_g^4 &= 2 \times \bcancel{4\pi R^2 \sigma} T_p^4 \\ \quad \implies \quad
+            T_g^4 &= 2T_p^4 \\ \quad \implies \quad
+            T_g &= 2^{1/4}T_p 
+        \end{equation*}
     \item 
         \begin{enumerate}[label=(\roman*)]
             \item We can rearrange the equation to solve for $\tau$: 
-                \begin{align*}
-                    T_g^4 = T_p^4\left(\frac{3\tau}{4} + 1 - \frac{6}{12}\right) \\
-                    \implies \left(\frac{T_g}{T_p}\right)^4 = \frac{3\tau}{4} + \frac{1}{2} \\
-                    \implies \frac{3\tau}{4} = \left(\frac{T_g}{T_p}\right)^4 - \frac{1}{2} \\
-                    \implies \tau = \frac{4}{3}\left(\left(\frac{T_g}{T_p}\right)^4 - \frac{1}{2}\right) \\
+                \begin{gather*}
+                    T_g^4 = T_p^4\left(\frac{3\tau}{4} + 1 - \frac{6}{12}\right) \quad \implies \quad
+                    \left(\frac{T_g}{T_p}\right)^4 = \frac{3\tau}{4} + \frac{1}{2} \quad \implies \quad
+                    \frac{3\tau}{4} = \left(\frac{T_g}{T_p}\right)^4 - \frac{1}{2} \\
+                    \implies \quad \tau = \frac{4}{3}\left(\left(\frac{T_g}{T_p}\right)^4 - \frac{1}{2}\right) 
                     = \frac{4}{3}\left(\left(\frac{288}{255}\right)^4 - \frac{1}{2}\right)
                     = 1.503
-                \end{align*}
-            \item
-            \item We can calculate the new $T_g$ using Equation 1, where $\tau$ is twice our result from (i):
-                \begin{align*}
+                \end{gather*}
+
+            \item From the Lecture 16 slides, we use $T_p = 230~{\rm K}$ and $T_g = 733~{\rm K}$ in the equation above: 
+                \begin{equation*}
+                    \tau = \frac{4}{3}\left(\left(\frac{T_g}{T_p}\right)^4 - \frac{1}{2}\right) = \frac{4}{3}\left(\left(\frac{733}{230}\right)^4 - \frac{1}{2}\right) = 136.9. 
+                \end{equation*}
+
+            \item We can calculate the new $T_g$ using Equation 1 (from the problems), where $\tau$ is twice our result from (i):
+                \begin{equation*}
                     T_g &= \sqrt[4]{T_p^4\left(1+\frac{3}{4}\left(\tau - \frac{2}{3}\right)\right)} \\
                     &= \sqrt[4]{255^4 \left(1 + \frac{3}{4}\left(2\times1.503 - \frac{2}{3}\right)\right)} \\
                     &= 328.5.
-                \end{align*}
+                \end{equation*}
                 Then the rise in temperature is simply the difference in temperature: 
                 \begin{align*}
                     \Delta T_g &= T_{g2} - T_{g1} = 328.5~{\rm K} - 288~{\rm K} = 40.5~{\rm K}. 
@@ -84,33 +96,33 @@
             E_k = \frac{3}{2}Nk_BT = \frac{3}{2}\frac{M}{\overline m}k_BT = \frac{3\times 2.46\times 10^{14}~{\rm kg}}{2\times 2.99\times 10^{-26}~{\rm kg}}\times 1.38\times 10^{-23}~{\rm J\,K^{-1}} \times 273~{\rm K} = 4.65\times 10^{19}~{\rm J}.
         \end{align*}
     \item Equating the thermal energy of the vapourized rocks to the kinetic energy of the comet allows us to determine an expression for the mass of the rocks in terms of the kinetic energy:
-        \begin{align*}
-            E_k = \frac{3}{2}\frac{M}{\overline m}k_BT
-            \implies M = \frac{2E_k\overline{m}}{3k_BT}.
-        \end{align*}
+        \begin{equation*}
+            E_k = \frac{3}{2}\frac{M}{\overline m}k_BT \quad
+            \implies \quad M = \frac{2E_k\overline{m}}{3k_BT}.
+        \end{equation*}
         Evaluating this expression, with $\overline{m} = 30\,m_H = 30\times 1.674\times 10^{-27}~{\rm kg} = 5.022\times 10^{-26}~{\rm kg}$, and $T = 3500~{\rm K}$, we can find the mass of the vapourized rocks:
         \begin{align*}
-            M = \frac{2\times 4.65\times 10^{19}~{\rm J}\times 5.022\times 10^{-26}~{\rm kg}}{3\times 1.38\times 10^{-23}~{\rm J\,K^{-1}}\times 3500~{\rm K}} = 3.22\times 10^{13}~{\rm kg}
+            M = \frac{2\times 4.65\times 10^{19}~{\rm J}\times 5.022\times 10^{-26}~{\rm kg}}{3\times 1.38\times 10^{-23}~{\rm J\,K^{-1}}\times 3500~{\rm K}} = 3.22\times 10^{13}~{\rm kg}.
         \end{align*}
         We can use this, along with the formula for the volume of a cylinder, $V = \pi hr^2$, to find the radius of the cylinder:
-        \begin{align*}
-            V = \pi hr^2 \\
-            \implies r = \sqrt{\frac{V}{\pi h}} = \sqrt{\frac{\frac{M}{\rho}}{\pi h}} = \sqrt{\frac{\frac{3.22\times 10^{13}~{\rm kg}}{2000~{\rm kg\,m^{-3}}}}{\pi \times 10^{4}~{\rm m}}} = 715.9~{\rm m}.
-        \end{align*}
+        \begin{equation*}
+            V = \pi hr^2 \\\quad
+            \implies \quad r = \sqrt{\frac{V}{\pi h}} = \sqrt{\frac{\frac{M}{\rho}}{\pi h}} = \sqrt{\frac{\frac{3.22\times 10^{13}~{\rm kg}}{2000~{\rm kg\,m^{-3}}}}{\pi \times 10^{4}~{\rm m}}} = 715.9~{\rm m}.
+        \end{equation*}
 
     \item If we call the number of impacts on the Moon $I_M$ and on the Earth $I_E$, then we can simply use the ratio of surface areas to solve for $I_E$:
-        \begin{align*}
-            \frac{A_E}{A_M} = \frac{4\pi r_E^2}{4\pi r_M^2} = \frac{r_E^2}{r_M^2} = \frac{I_E}{I_M} \\
-            \implies I_E = \frac{r_E^2}{r_M^2}\,I_M = \frac{(6.3781\times 10^{6}~{\rm m})^2}{(1.7371\times 10^{6}~{\rm m})^2}\times 10~{\rm impacts} \simeq 135~{\rm impacts}. 
-        \end{align*}
+        \begin{equation*}
+            \frac{A_E}{A_M} = \frac{4\pi r_E^2}{4\pi r_M^2} = \frac{r_E^2}{r_M^2} = \frac{I_E}{I_M} \\\quad
+            \implies \quad I_E = \frac{r_E^2}{r_M^2}\,I_M = \frac{(6.3781\times 10^{6}~{\rm m})^2}{(1.7371\times 10^{6}~{\rm m})^2}\times 10~{\rm impacts} \simeq 135~{\rm impacts}. 
+        \end{equation*}
 
-        {\huge BONUS: something about moon having no atmosphere => no winds to blow dust to cover up the craters or any historical evidence.}
+        BONUS: The Moon has a negligible atmosphere. It probably does not have tectonic plate movement either (because it is too cool). This means that there are no winds to blow dust to cover up any historical evidence or cause erosion to the craters. There is also no movement of plates to cause the craters to shift (and merge or split). 
 
     \item Dividing the number of impacts by the time over which we calculated the number of impacts, we find that that mean time between impacts is
         \begin{equation*}
             \overline{t} = \frac{t_{tot}}{I_E} = \frac{3\times 10^{9}~{\rm years}}{134~{\rm impacts}} = 2.24\times 10^{7}~\text{years per impact} = 22.4~\text{Myrs per impact}.
         \end{equation*}
-        {\huge the observed difference might be because earth's atmosphere provides some level of protection from foreign objects.}
+        The observed difference might be because Earth's atmosphere provides some level of protection from foreign objects, whereas the Moon has such protection.
 \end{enumerate}
 
 
@@ -119,17 +131,51 @@
 % problem 3
 \section*{Problem 3: Rayleigh scattering}
 
-\begin{enumerate}[label=(\alph*)]
-\end{enumerate}
+Here I use $d$ to represent the total zigzaggy distance travelled by the photon, and $\vec{d}$ to represent the straight line distance through the atmosphere. 
+
+The mean free path is given by the equation 
+\begin{equation*}
+    l_{mfp} = \frac{1}{n\sigma},
+\end{equation*}
+where $n$ is the number density and $\sigma$ is the cross-sectional area, and displacement $\vec{d}$ is given by 
+\begin{equation*}
+    \vec{d} = \sqrt{N}\,l_{mfp},
+\end{equation*}
+where $N$ is the number of collisions. Given that a red photon has double the wavelength of a blue photon, and that $\sigma \propto \lambda^{-4}$, a red photon will have cross section $16$ times that of a blue photon. Consequently, the mean free path will be $16$ times shorter. Knowing that the mean free path for a blue photon is $l_{mfp} = \vec{d}/3$, we conclude that the mean free path for a red photon is $l_{mfp} = (\vec{d}/3) / 16 = \vec{d}/48$. Then the time taken for a photon to travel a total distance of $d$ is given by 
+\begin{align*}
+    t = \frac{d}{c} = \frac{N\,l_{mfp}}{c} = \frac{\vec{d^2}}{l_{mfp}\,c} = \frac{\vec{d^2}}{\frac{\vec{d}}{48}\,c} = 48\,\frac{\vec{d}}{c}.
+\end{align*}
 
 % problem 4
 \section*{Problem 4: Temperatures on Earth} 
 
 \begin{enumerate}[label=(\alph*)]
-    \item We can again use the formula relating kinetic energy to temperature, where temperature here is {\huge what temperature from problem 1? 255? 288? something else?}
+    \item We can again use the formula relating kinetic energy to temperature, where temperature here is $255~{\rm K}$: 
         \begin{align*}
-            E_k = \frac{3M}{2\overline{m}}k_bT = \frac{3\times 5\times 10^{18}~{\rm kg}}{2\times 29\times 1.674\times 10^{-27}~{\rm kg}} \times 1.38\times 10^{-23}~{\rm J\,K^{-1}} \times T
+            E_k = \frac{3M}{2\overline{m}}k_bT = \frac{3\times 5\times 10^{18}~{\rm kg}}{2\times 29\times 1.674\times 10^{-27}~{\rm kg}} \times 1.38\times 10^{-23}~{\rm J\,K^{-1}} \times 255~{\rm K} = 5.44\times 10^{23}~{\rm J}.
         \end{align*}
+
+    \item The luminosity is related to the temperature by the Stefan-Boltzmann law: $L = 4\pi R^2 \sigma T^4$. If we evaluate this, varying the radius from the surface of the Earth to the outer atmosphere (which we take to be the K\'arm\'an line), then the luminosity of the atmosphere is 
+        \begin{align*}
+            L &= 4 \pi R^2 \sigma T^4~\text{, for $R$ from $R_\oplus$ to $R_\oplus + 10^5~{\rm m}$} \\
+            &= 4\pi \sigma T^4 \left(R^2\Big|_{R_\oplus}^{R_\oplus + 10^5}\right) \\
+            &= 4\pi \times 5.67\times 10^{-8}~{\rm W\,m^{-2}\,K^{-4}} \times (255~{\rm K})^4 \times \left((6.371\times 10^{6}~{\rm m} + 10^{5}~{\rm m})^2 - (6.371\times 10^{6}~{\rm m})^2\right) \\
+            &= 3.87\times 10^{15}~{\rm W}
+        \end{align*}
+
+        We can calculate the luminosity using the Stefan-Boltzmann law, where $R$ is the radius of the Earth: 
+        \begin{equation*}
+            L &= 4\pi R_\oplus^2 \sigma T^4 \\
+            &= 4\pi \times (6.371\times 10^{6}~{\rm m})^2 \times 5.67\times 10^{-8}~{\rm W\,m^{-2}\,K^{-4}}\times (255~{\rm K})^4 \\
+            &= 1.22\times 10^{17}~{\rm W}
+        \end{equation*}
+
+    \item Dividing the thermal energy by the luminosity gives a time of 
+        \begin{align*}
+            t = \frac{E_K}{L} = \frac{5.44\times 10^{23}~{\rm J}}{1.22\times 10^{17}~{\rm W}} = 4.46\times 10^{16}~{\rm s} \simeq 51.6~{\rm days}
+        \end{align*}
+
+        Summer solstice in the northern hemisphere is around June 20, and the time of year in which the temperatures are highest in Toronto is around July 20\footnote{Source: https://weatherspark.com/y/19863/Average-Weather-in-Toronto-Canada-Year-Round}. The delay is roughly 30 days. This is on the same order of magnitude as our result. 
 \end{enumerate}
 
 
